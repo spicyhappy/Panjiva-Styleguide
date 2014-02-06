@@ -1,0 +1,315 @@
+@import "fonts", "variables";
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	height:100%;
+}
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form, textarea, input, select, label,legend,textarea,table,caption,tbody,tfoot,thead,tr,th,td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: $gray5;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	line-height: 1.5em;
+
+}
+
+body {
+	background-color: #ECF0F1;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-family: $bodyFontStack;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+	color: #34495E;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	line-height: 0.375em;
+	font-size: 1em;
+	height: inherit;
+}
+
+.h0 {
+	font-family: $titleFontStack;
+	color: $blueLight;
+	font-size: 3em;
+	line-height: 1.25em;
+	padding-top: 0.02083333333333em;
+	margin-bottom: 0.47916666666667em;
+}
+
+h1, .h1 {
+	font-family: $titleFontStack;
+	color: $blueLight;
+	font-size: 2.25em;
+	line-height: 1.3333333333em;
+	margin-bottom: 0.5em;
+}
+
+h2, .h2 {
+	font-family: $titleFontStack;
+	color: #7F8C8D;
+	font-size: 2.25em;
+	line-height: 1.3333333333em;
+	margin-bottom: 0.33333333333333em;
+}
+
+h3, .h3 {
+	font-family: $titleFontStack;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-top: 0.166666666667em;
+	margin-bottom: 0.58333333333333em;
+}
+
+h4, .h4, h5, h6 {
+	font-family: $titleFontStack;
+	font-size: 1.125em;
+	line-height: 1.3333333333em;
+	margin-bottom: 1em;
+}
+
+.xlarge {
+	font-family: $bodyFontStack;
+	font-size: 1.625em;
+	line-height: 1.38461538461538em;
+	padding-top: 0.15384615384615em;
+	margin-bottom: 0.76923076923077em;
+}
+
+.large {
+	font-family: $bodyFontStack;
+	font-size: 1.25em;
+	line-height: 1.5em;
+	padding-top: 0.15em;
+	margin-bottom: 0.75em;
+}
+
+.normal {
+	font-family: $bodyFontStack;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.small, small {
+	font-family: $bodyFontStack;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	padding-top: 0;
+	margin-bottom: 1em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding-top: 0.0625em;
+	margin-bottom: 0.6875em;
+}
+
+a, a:visited {
+	color: $blueLight;
+	text-decoration: none;
+}
+
+a:not(.img), a:visited:not(.img) { 
+	border-bottom: 2px solid;
+	color: $blueLight;
+}
+
+#wrap {
+	background-color: $white;
+	margin-left: 11.25em;
+	padding-top: 3.75em;
+	margin-right: 0;
+	width: auto;
+	height: inherit;
+	position: relative;
+}
+
+#content {
+	background-color: $white;
+	padding: 3em 2.5em;
+
+}
+
+#mainNav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 3.75em;
+	width: 100%;
+	background-color: $blueLight;
+	overflow: hidden;
+
+	.logo {
+		width: 11.25em;
+		height: 100%;
+		display: inline-block;
+
+		img {
+			position: relative;
+			top: .5em;
+			padding-left: 2.875em;
+			padding-top: 0.5625em;
+			height: 2.25em;
+		}
+	}
+
+	.search {
+		margin-left: 2.5em;
+		position: relative;
+
+		input {
+			width: 30%;
+			min-width: 22.5em;
+			border: 2px solid lighten($blueLight, 30%);
+		}
+
+		input:focus {
+			border: 2px solid darken($blueLight, 10%);
+		}
+
+		.inputLink {
+			position: absolute;
+			right: 2.5em;
+			border:none;
+			color: $gray5;
+		}
+
+		.icon {
+			position: absolute;
+			right: 0.625em;
+		}
+
+		.inputLink, .icon {
+			line-height: 3.75em;
+		}
+
+		.inputLink:hover, .icon:hover {
+			opacity: .7;
+		}
+	}
+
+	ul {
+		display: inline-block;
+		float: right;
+		margin-right: 2.5em;
+
+		.icon {
+			font-size: 0.2em;
+			position: relative;
+			margin-left: 0.625em;
+			bottom: 2px;
+		}
+
+		li {
+			display: inline-block;
+			line-height: 3.75em;
+			color: $gray5;
+
+
+			a {
+				border: none;
+				font-weight: bold;
+				color: inherit;
+				padding: 0 1.25em;
+			}
+		}
+
+		li:hover {
+			background-color: lighten($blueLight, 20%);
+		}
+	}
+}
+
+#sideNav {
+	left: 0;
+	overflow-y: auto;
+	position: fixed;
+	width: 11.25em;
+
+	li {
+		font-size: 1em;
+		line-height: 3.75em;
+		color: $gray3;
+
+		a {
+			padding: 0 1.25em;
+			border: none;
+			font-weight: bold;
+			color: inherit;
+		}
+	}
+
+	li.selected {
+		color: $gray5;
+	}
+
+	li:hover {
+		background-color: rgba($gray2, 0.3);
+		color: $gray5;
+	}
+
+	.icon {
+		color: inherit;
+		padding-left: 1.25em;
+	}
+
+	.icon + a {
+		padding-left: 0.625em;
+	}
+}
+
+textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+	display: inline-block;
+	padding: 0 0.625em;
+	border-radius: 0.3125em;
+	min-width: 3.75em;
+	max-width: 37.5em;
+	width: 100%;
+	min-height: 2.25em;
+	background-color: #fff;
+	border: 2px solid $gray3;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+	border: 2px solid $blueLight;
+	outline: none;
+}
+
+// Placeholder grays, unable to combine into one rule or else browser will ignore
+input::-webkit-input-placeholder {
+	color: $gray2;
+}
+input::-moz-placeholder {
+	color: $gray2;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: $gray2;
+}
+input:-ms-input-placeholder { 
+	color: $gray2;
+}
+
+textarea::-webkit-input-placeholder {
+	color: $gray2;
+}
+textarea::-moz-placeholder {
+	color: $gray2;
+}
+textarea:-moz-placeholder {   /* Older versions of Firefox */
+	color: $gray2;
+}
+textarea:-ms-input-placeholder { 
+	color: $gray2;
+}
