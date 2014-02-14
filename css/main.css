@@ -425,10 +425,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
   line-height: 1.5em;
 }
 
-/* line 26, main.scss */
+/* line 27, main.scss */
+.section {
+  border-top: 2px solid #ecf0f1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 33, main.scss */
 body {
   background-color: #ECF0F1;
   font-size: 100%;
@@ -445,7 +453,7 @@ body {
   height: inherit;
 }
 
-/* line 42, main.scss */
+/* line 49, main.scss */
 .h0 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   color: #15bded;
@@ -455,7 +463,7 @@ body {
   margin-bottom: 0.47916666666667em;
 }
 
-/* line 51, main.scss */
+/* line 58, main.scss */
 h1, .h1 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   color: #15bded;
@@ -464,7 +472,7 @@ h1, .h1 {
   margin-bottom: 0.5em;
 }
 
-/* line 59, main.scss */
+/* line 66, main.scss */
 h2, .h2 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   color: #7F8C8D;
@@ -473,7 +481,7 @@ h2, .h2 {
   margin-bottom: 0.33333333333333em;
 }
 
-/* line 67, main.scss */
+/* line 74, main.scss */
 h3, .h3 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.5em;
@@ -482,7 +490,7 @@ h3, .h3 {
   margin-bottom: 0.58333333333333em;
 }
 
-/* line 75, main.scss */
+/* line 82, main.scss */
 h4, .h4, h5, h6 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.125em;
@@ -490,61 +498,54 @@ h4, .h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-/* line 82, main.scss */
+/* line 89, main.scss */
 .xlarge {
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.625em;
   line-height: 1.38461538461538em;
-  padding-top: 0.15384615384615em;
-  margin-bottom: 0.76923076923077em;
+  padding-top: 0.5625em;
+  margin-bottom: 0.34615384615385em;
 }
 
-/* line 90, main.scss */
+/* line 97, main.scss */
 .large {
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.25em;
   line-height: 1.5em;
-  padding-top: 0.15em;
-  margin-bottom: 0.75em;
+  padding-top: 0.1em;
+  margin-bottom: 0.5em;
 }
 
-/* line 98, main.scss */
+/* line 105, main.scss */
 .normal {
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
+  margin-bottom: 0.75em;
+  color: #34495e;
+  font-weight: normal;
 }
 
-/* line 104, main.scss */
-.small, small {
-  font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.75em;
-  line-height: 1.5em;
-  padding-top: 0;
-  margin-bottom: 1em;
-}
-
-/* line 112, main.scss */
+/* line 114, main.scss */
 p {
   font-size: 1em;
   line-height: 1.5em;
-  padding-top: 0.0625em;
-  margin-bottom: 0.6875em;
+  margin-bottom: 0.75em;
 }
 
-/* line 119, main.scss */
+/* line 120, main.scss */
 a, a:visited {
   color: #15bded;
   text-decoration: none;
 }
 
-/* line 124, main.scss */
+/* line 125, main.scss */
 a:not(.img), a:visited:not(.img) {
   border-bottom: 2px solid;
   color: #15bded;
 }
 
-/* line 129, main.scss */
+/* line 130, main.scss */
 #wrap {
   background-color: white;
   margin-left: 11.25em;
@@ -555,13 +556,13 @@ a:not(.img), a:visited:not(.img) {
   position: relative;
 }
 
-/* line 139, main.scss */
+/* line 140, main.scss */
 #content {
   background-color: white;
   padding: 3em 2.5em;
 }
 
-/* line 145, main.scss */
+/* line 146, main.scss */
 #mainNav {
   position: fixed;
   top: 0;
@@ -571,13 +572,13 @@ a:not(.img), a:visited:not(.img) {
   background-color: #15bded;
   overflow: hidden;
 }
-/* line 154, main.scss */
+/* line 155, main.scss */
 #mainNav .logo {
   width: 11.25em;
   height: 100%;
   display: inline-block;
 }
-/* line 159, main.scss */
+/* line 160, main.scss */
 #mainNav .logo img {
   position: relative;
   top: .5em;
@@ -585,112 +586,114 @@ a:not(.img), a:visited:not(.img) {
   padding-top: 0.5625em;
   height: 2.25em;
 }
-/* line 168, main.scss */
+/* line 169, main.scss */
 #mainNav .search {
   margin-left: 2.5em;
   position: relative;
 }
-/* line 172, main.scss */
+/* line 173, main.scss */
 #mainNav .search input {
   width: 30%;
   min-width: 22.5em;
   border: 2px solid #a3e5f8;
 }
-/* line 178, main.scss */
+/* line 179, main.scss */
 #mainNav .search input:focus {
   border: 2px solid #0f99c0;
 }
-/* line 182, main.scss */
+/* line 183, main.scss */
 #mainNav .search .inputLink {
   position: absolute;
   right: 2.5em;
   border: none;
   color: #34495e;
 }
-/* line 189, main.scss */
+/* line 190, main.scss */
 #mainNav .search .icon {
   position: absolute;
   right: 0.625em;
 }
-/* line 194, main.scss */
+/* line 195, main.scss */
 #mainNav .search .inputLink, #mainNav .search .icon {
   line-height: 3.75em;
 }
-/* line 198, main.scss */
+/* line 199, main.scss */
 #mainNav .search .inputLink:hover, #mainNav .search .icon:hover {
   opacity: .7;
 }
-/* line 203, main.scss */
+/* line 204, main.scss */
 #mainNav ul {
   display: inline-block;
   float: right;
   margin-right: 2.5em;
 }
-/* line 208, main.scss */
+/* line 209, main.scss */
 #mainNav ul .icon {
   font-size: 0.2em;
   position: relative;
   margin-left: 0.625em;
   bottom: 2px;
 }
-/* line 215, main.scss */
+/* line 216, main.scss */
 #mainNav ul li {
   display: inline-block;
   line-height: 3.75em;
   color: #34495e;
 }
-/* line 221, main.scss */
+/* line 222, main.scss */
 #mainNav ul li a {
   border: none;
   font-weight: bold;
   color: inherit;
   padding: 0 1.25em;
 }
-/* line 229, main.scss */
+/* line 230, main.scss */
 #mainNav ul li:hover {
   background-color: #74d8f4;
 }
 
-/* line 235, main.scss */
+/* line 236, main.scss */
 #sideNav {
-  left: 0;
   overflow-y: auto;
   position: fixed;
+  bottom: 0;
+  top: 60px;
+  left: 0;
   width: 11.25em;
 }
-/* line 241, main.scss */
+/* line 244, main.scss */
 #sideNav li {
   font-size: 1em;
   line-height: 3.75em;
   color: #95a5a6;
 }
-/* line 246, main.scss */
+/* line 249, main.scss */
 #sideNav li a {
   padding: 0 1.25em;
   border: none;
   font-weight: bold;
   color: inherit;
 }
-/* line 254, main.scss */
+/* line 257, main.scss */
 #sideNav li.selected {
   color: #34495e;
 }
-/* line 258, main.scss */
+/* line 261, main.scss */
 #sideNav li:hover {
   background-color: rgba(189, 195, 199, 0.3);
   color: #34495e;
 }
-/* line 263, main.scss */
+/* line 266, main.scss */
 #sideNav .icon {
   color: inherit;
   padding-left: 1.25em;
 }
-/* line 268, main.scss */
+/* line 271, main.scss */
 #sideNav .icon + a {
   padding-left: 0.625em;
 }
 
-/* line 273, main.scss */
+/* line 276, main.scss */
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
   display: inline-block;
   padding: 0 0.625em;
@@ -703,50 +706,50 @@ textarea, input[type="text"], input[type="password"], input[type="file"], input[
   border: 2px solid #95a5a6;
 }
 
-/* line 285, main.scss */
+/* line 288, main.scss */
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
   border: 2px solid #15bded;
   outline: none;
 }
 
-/* line 291, main.scss */
+/* line 294, main.scss */
 input::-webkit-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 294, main.scss */
+/* line 297, main.scss */
 input::-moz-placeholder {
   color: #bdc3c7;
 }
 
-/* line 297, main.scss */
+/* line 300, main.scss */
 input:-moz-placeholder {
   /* Older versions of Firefox */
   color: #bdc3c7;
 }
 
-/* line 300, main.scss */
+/* line 303, main.scss */
 input:-ms-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 304, main.scss */
+/* line 307, main.scss */
 textarea::-webkit-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 307, main.scss */
+/* line 310, main.scss */
 textarea::-moz-placeholder {
   color: #bdc3c7;
 }
 
-/* line 310, main.scss */
+/* line 313, main.scss */
 textarea:-moz-placeholder {
   /* Older versions of Firefox */
   color: #bdc3c7;
 }
 
-/* line 313, main.scss */
+/* line 316, main.scss */
 textarea:-ms-input-placeholder {
   color: #bdc3c7;
 }

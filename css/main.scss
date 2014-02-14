@@ -19,8 +19,15 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 	font-size: 100%;
 	font-family: inherit;
 	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
 	line-height: 1.5em;
 
+}
+
+.section {
+	border-top: 2px solid $gray1;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 body {
@@ -83,37 +90,31 @@ h4, .h4, h5, h6 {
 	font-family: $bodyFontStack;
 	font-size: 1.625em;
 	line-height: 1.38461538461538em;
-	padding-top: 0.15384615384615em;
-	margin-bottom: 0.76923076923077em;
+	padding-top: 0.5625em;
+	margin-bottom: 0.34615384615385em;
 }
 
 .large {
 	font-family: $bodyFontStack;
 	font-size: 1.25em;
 	line-height: 1.5em;
-	padding-top: 0.15em;
-	margin-bottom: 0.75em;
+	padding-top: 0.1em;
+	margin-bottom: 0.5em;
 }
 
 .normal {
 	font-family: $bodyFontStack;
 	font-size: 1em;
 	line-height: 1.5em;
-}
-
-.small, small {
-	font-family: $bodyFontStack;
-	font-size: 0.75em;
-	line-height: 1.5em;
-	padding-top: 0;
-	margin-bottom: 1em;
+	margin-bottom: 0.75em;
+	color: $gray5;
+	font-weight: normal;
 }
 
 p {
 	font-size: 1em;
 	line-height: 1.5em;
-	padding-top: 0.0625em;
-	margin-bottom: 0.6875em;
+	margin-bottom: 0.75em;
 }
 
 a, a:visited {
@@ -233,9 +234,11 @@ a:not(.img), a:visited:not(.img) {
 }
 
 #sideNav {
-	left: 0;
 	overflow-y: auto;
 	position: fixed;
+	bottom: 0;
+	top: 60px;
+	left: 0;
 	width: 11.25em;
 
 	li {
