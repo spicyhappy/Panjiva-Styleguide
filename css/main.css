@@ -397,12 +397,18 @@
   content: "\e640";
 }
 
-/*
-This CSS resource incorporates links to font software which is the valuable copyrighted
-property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
-redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
-Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com
-*/
+/* This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com */
+/* line 1, _styleguide.scss */
+.swatch {
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #95a5a6;
+  display: inline-block;
+}
+
 /* line 3, main.scss */
 * {
   -moz-box-sizing: border-box;
@@ -438,7 +444,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 /* line 33, main.scss */
 body {
-  background-color: #ECF0F1;
+  background-color: white;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -546,23 +552,36 @@ a:not(.img), a:visited:not(.img) {
 }
 
 /* line 130, main.scss */
+a:hover, a:visited:hover {
+  color: #0b7391;
+}
+
+/* line 135, main.scss */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+/* line 142, main.scss */
 #wrap {
   background-color: white;
   margin-left: 11.25em;
-  padding-top: 3.75em;
   margin-right: 0;
   width: auto;
   height: inherit;
   position: relative;
 }
 
-/* line 140, main.scss */
+/* line 151, main.scss */
 #content {
   background-color: white;
   padding: 3em 2.5em;
+  margin-top: 3.75em;
 }
 
-/* line 146, main.scss */
+/* line 158, main.scss */
 #mainNav {
   position: fixed;
   top: 0;
@@ -571,14 +590,16 @@ a:not(.img), a:visited:not(.img) {
   width: 100%;
   background-color: #15bded;
   overflow: hidden;
+  z-index: 200;
+  transition: all .2s ease-in-out;
 }
-/* line 155, main.scss */
+/* line 168, main.scss */
 #mainNav .logo {
   width: 11.25em;
   height: 100%;
   display: inline-block;
 }
-/* line 160, main.scss */
+/* line 173, main.scss */
 #mainNav .logo img {
   position: relative;
   top: .5em;
@@ -586,114 +607,127 @@ a:not(.img), a:visited:not(.img) {
   padding-top: 0.5625em;
   height: 2.25em;
 }
-/* line 169, main.scss */
+/* line 182, main.scss */
 #mainNav .search {
   margin-left: 2.5em;
   position: relative;
 }
-/* line 173, main.scss */
+/* line 186, main.scss */
 #mainNav .search input {
   width: 30%;
   min-width: 22.5em;
   border: 2px solid #a3e5f8;
 }
-/* line 179, main.scss */
+/* line 192, main.scss */
 #mainNav .search input:focus {
   border: 2px solid #0f99c0;
 }
-/* line 183, main.scss */
+/* line 196, main.scss */
 #mainNav .search .inputLink {
   position: absolute;
   right: 2.5em;
   border: none;
   color: #34495e;
 }
-/* line 190, main.scss */
+/* line 203, main.scss */
 #mainNav .search .icon {
   position: absolute;
   right: 0.625em;
 }
-/* line 195, main.scss */
+/* line 208, main.scss */
 #mainNav .search .inputLink, #mainNav .search .icon {
   line-height: 3.75em;
 }
-/* line 199, main.scss */
+/* line 212, main.scss */
 #mainNav .search .inputLink:hover, #mainNav .search .icon:hover {
-  opacity: .7;
+  opacity: .5;
 }
-/* line 204, main.scss */
+/* line 217, main.scss */
 #mainNav ul {
   display: inline-block;
   float: right;
   margin-right: 2.5em;
 }
-/* line 209, main.scss */
+/* line 222, main.scss */
 #mainNav ul .icon {
   font-size: 0.2em;
   position: relative;
   margin-left: 0.625em;
   bottom: 2px;
 }
-/* line 216, main.scss */
+/* line 229, main.scss */
 #mainNav ul li {
   display: inline-block;
   line-height: 3.75em;
   color: #34495e;
 }
-/* line 222, main.scss */
+/* line 235, main.scss */
 #mainNav ul li a {
   border: none;
   font-weight: bold;
   color: inherit;
   padding: 0 1.25em;
 }
-/* line 230, main.scss */
+/* line 243, main.scss */
 #mainNav ul li:hover {
   background-color: #74d8f4;
 }
 
-/* line 236, main.scss */
+/* line 252, main.scss */
+#mainNav.slideUp {
+  top: -60px;
+}
+
+/* line 256, main.scss */
+#mainNav.slideDown {
+  top: 0;
+}
+
+/* line 260, main.scss */
 #sideNav {
   overflow-y: auto;
+  background-color: #ecf0f1;
   position: fixed;
   bottom: 0;
-  top: 60px;
+  top: 0;
   left: 0;
   width: 11.25em;
+  padding-top: 60px;
+  z-index: 100;
 }
-/* line 244, main.scss */
+/* line 271, main.scss */
 #sideNav li {
   font-size: 1em;
   line-height: 3.75em;
   color: #95a5a6;
 }
-/* line 249, main.scss */
+/* line 276, main.scss */
 #sideNav li a {
   padding: 0 1.25em;
   border: none;
   font-weight: bold;
   color: inherit;
 }
-/* line 257, main.scss */
+/* line 284, main.scss */
 #sideNav li.selected {
   color: #34495e;
 }
-/* line 261, main.scss */
+/* line 288, main.scss */
 #sideNav li:hover {
   background-color: rgba(189, 195, 199, 0.3);
   color: #34495e;
 }
-/* line 266, main.scss */
+/* line 293, main.scss */
 #sideNav .icon {
   color: inherit;
   padding-left: 1.25em;
 }
-/* line 271, main.scss */
+/* line 298, main.scss */
 #sideNav .icon + a {
   padding-left: 0.625em;
 }
 
-/* line 276, main.scss */
+/* line 303, main.scss */
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
   display: inline-block;
   padding: 0 0.625em;
@@ -706,50 +740,50 @@ textarea, input[type="text"], input[type="password"], input[type="file"], input[
   border: 2px solid #95a5a6;
 }
 
-/* line 288, main.scss */
+/* line 315, main.scss */
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
   border: 2px solid #15bded;
   outline: none;
 }
 
-/* line 294, main.scss */
+/* line 321, main.scss */
 input::-webkit-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 297, main.scss */
+/* line 324, main.scss */
 input::-moz-placeholder {
   color: #bdc3c7;
 }
 
-/* line 300, main.scss */
+/* line 327, main.scss */
 input:-moz-placeholder {
   /* Older versions of Firefox */
   color: #bdc3c7;
 }
 
-/* line 303, main.scss */
+/* line 330, main.scss */
 input:-ms-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 307, main.scss */
+/* line 334, main.scss */
 textarea::-webkit-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 310, main.scss */
+/* line 337, main.scss */
 textarea::-moz-placeholder {
   color: #bdc3c7;
 }
 
-/* line 313, main.scss */
+/* line 340, main.scss */
 textarea:-moz-placeholder {
   /* Older versions of Firefox */
   color: #bdc3c7;
 }
 
-/* line 316, main.scss */
+/* line 343, main.scss */
 textarea:-ms-input-placeholder {
   color: #bdc3c7;
 }

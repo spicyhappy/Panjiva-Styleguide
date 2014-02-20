@@ -3,21 +3,15 @@
 <head>
 	<title>Styleguide</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/styleguide.css">
-	<script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"> // http://keyes.ie/things/baseliner/
-	</script>
-	<script>
-		window.onload = function() {
-		    baseliner = new Baseliner({ gridHeight: 6, gridColor: 'red', gridOffset: 0, gridOpacity: 20});
-	}
-	</script>
+
+	<!-- Baseline stuff  -->
+	<script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
+	<script>window.onload = function() {baseliner = new Baseliner({ gridHeight: 6, gridColor: 'red', gridOffset: 0, gridOpacity: 20});}</script>
 </head>
 
 <body>
-
-
 	<div id="wrap">
-		<nav id="mainNav">
+		<nav id="mainNav" class="">
 			<a class="logo img" href=""><img src="img/panjivalogovectorized-white.png" alt="panjiva logo"></a>
 			<span class="search">
 				<input type="text" placeholder="Enter a company or product">
@@ -29,10 +23,10 @@
 				<li><a href="">Sally Sullivan<span class="panjiva-icon-down icon"></span></a></li>
 			</ul>
 		</nav>
-		<ul id="sideNav" class="normal">
-				<li class=""><span class="panjiva-icon-home icon"></span><a href="">Top</a></li>
+		<ul id="sideNav">
+				<li class=""><span class="panjiva-icon-home icon"></span><a href="#top">Top</a></li>
 				<li><a href="">Grid</a></li>
-				<li><a href="">Typography</a></li>
+				<li><a href="#typography">Typography</a></li>
 				<li><a href="">Color</a></li>
 				<li><a href="">Forms</a></li>
 				<li><a href="">Navigation</a></li>
@@ -42,8 +36,11 @@
 		</ul>
 
 		<div id="content">
+			<a name="top" class="anchor"></a>
 			<h1>Styleguide</h1>
-			<div id="typography" class="section">
+			<p>This is our styleguide. There are many like it but this one's ours. It borrows heavily from <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> and <a href="https://ux.mailchimp.com/patterns">Mailchimp's pattern library</a>.</p>
+			<div class="section">
+				<a name="typography"></a>
 				<h2>Typography</h2>
 				<h1 class="h0">H0 Marketing headline</h1>
 				<h1>H1 headline</h1>
@@ -53,17 +50,48 @@
 				<p class="large"> Large text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p> Normal text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<b>Bolded text is in Helvetica Neue Medium.</b> <a>This is a link.</a></p>
 			</div>
-			<div id="color" class="section">
-				<div class="swatch">#ECF0F1</div>
-				<div class="swatch">#BDC3C7</div>
-				<div class="swatch">#95A5A6</div>
-				<div class="swatch">#7F8C8D</div>
-				<div class="swatch">#34495E</div>
-				<div class="swatch">#2C3E50</div>
+			<div class="section">
+				<a name="typography"></a>
+				<h2>Color</h2>
+				<div class="swatch" style="background-color:#ECF0F1">#ECF0F1</div>
+				<div class="swatch" style="background-color:#BDC3C7">#BDC3C7</div>
+				<div class="swatch" style="background-color:#95A5A6">#95A5A6</div>
+				<div class="swatch" style="background-color:#7F8C8D; color:white">#7F8C8D</div>
+				<div class="swatch" style="background-color:#34495E; color:white">#34495E</div>
+				<div class="swatch" style="background-color:#2C3E50; color:white">#2C3E50</div>
+				<div class="swatch" style="background-color:#15BDED; color:white">#15BDED</div>
+				<div class="swatch" style="background-color:#00A1CF; color:white">#00A1CF</div>
+				<div class="swatch" style="background-color:#2ECC71; color:white">#2ECC71</div>
+				<div class="swatch" style="background-color:#27AE60; color:white">#27AE60</div>
+				<div class="swatch" style="background-color:#F1C40F; color:white">#F1C40F</div>
+				<div class="swatch" style="background-color:#F39C12; color:white">#F39C12</div>
+				<div class="swatch" style="background-color:#E67E22; color:white">#E67E22</div>
+				<div class="swatch" style="background-color:#D35400; color:white">#D35400</div>
+				<div class="swatch" style="background-color:#E74C3C; color:white">#E74C3C</div>
+				<div class="swatch" style="background-color:#C0392B; color:white">#C0392B</div>
+				<div class="swatch" style="background-color:#9B59B6; color:white">#9B59B6</div>
+				<div class="swatch" style="background-color:#8E44AD; color:white">#8E44AD</div>
+			</div>
+			<div>
+	
 			</div>
 		</div>
 
 	</div>
 
+	<!-- Hiding navigation -->
+	<script src="js/headroom.js"></script>
+	<script>	
+		(function() {
+			new Headroom(document.querySelector("#mainNav"), {
+				tolerance: 10,
+				offset : 205,
+				classes: {
+				pinned: "slideDown",
+				unpinned: "slideUp"
+				}
+			}).init();
+		}());
+	</script>
 </body>
 </html>

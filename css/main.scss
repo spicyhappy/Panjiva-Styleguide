@@ -1,4 +1,4 @@
-@import "fonts", "variables";
+@import "fonts", "variables", "styleguide";
 
 * {
 	-moz-box-sizing: border-box;
@@ -31,7 +31,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 }
 
 body {
-	background-color: #ECF0F1;
+	background-color: white;
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
@@ -127,10 +127,21 @@ a:not(.img), a:visited:not(.img) {
 	color: $blueLight;
 }
 
+a:hover, a:visited:hover {
+	color: darken($blueLight, 20%);
+}
+
+// Accounts for extra space on fixed header
+a.anchor {
+	display: block;
+	position: relative;
+	top: -120px;
+	visibility: hidden;
+}
+
 #wrap {
 	background-color: $white;
 	margin-left: 11.25em;
-	padding-top: 3.75em;
 	margin-right: 0;
 	width: auto;
 	height: inherit;
@@ -140,6 +151,7 @@ a:not(.img), a:visited:not(.img) {
 #content {
 	background-color: $white;
 	padding: 3em 2.5em;
+	margin-top:3.75em
 
 }
 
@@ -151,6 +163,7 @@ a:not(.img), a:visited:not(.img) {
 	width: 100%;
 	background-color: $blueLight;
 	overflow: hidden;
+	z-index: 200;
 
 	.logo {
 		width: 11.25em;
@@ -197,7 +210,7 @@ a:not(.img), a:visited:not(.img) {
 		}
 
 		.inputLink:hover, .icon:hover {
-			opacity: .7;
+			opacity: .5;
 		}
 	}
 
@@ -231,15 +244,29 @@ a:not(.img), a:visited:not(.img) {
 			background-color: lighten($blueLight, 20%);
 		}
 	}
+
+
+	transition: all .2s ease-in-out;
 }
+
+#mainNav.slideUp {
+		top: -60px;
+	}
+
+#mainNav.slideDown {
+		top: 0;
+	}
 
 #sideNav {
 	overflow-y: auto;
+	background-color: $gray1;
 	position: fixed;
 	bottom: 0;
-	top: 60px;
+	top: 0;
 	left: 0;
 	width: 11.25em;
+	padding-top: 60px;
+	z-index: 100;
 
 	li {
 		font-size: 1em;
