@@ -1,9 +1,24 @@
-.swatch {
-	height: 200px;
-	width: 200px;
+#color .swatch {
 	padding: 10px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	background-color: $gray3;
+	margin-right: 10px;
+	margin-bottom: 10px;
 	display: inline-block;
+	width: inherit;
+	color: inherit;
+}
+
+#color .unit {
+	text-align: center;
+}
+
+#grid .line {
+	background-color: lighten($blueLight, 40%);
+	margin-bottom: .75em;
+}
+
+#grid .unit p {
+	margin-top: .75em;
+	background-color: lighten($blueLight, 20%);
+	padding: .75em;
+	text-align: center;
 }

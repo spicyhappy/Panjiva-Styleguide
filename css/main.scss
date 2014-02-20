@@ -26,8 +26,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 
 .section {
 	border-top: 2px solid $gray1;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1.25em;
+	padding-bottom: 1.25em;
 }
 
 body {
@@ -38,13 +38,134 @@ body {
 	font-family: $bodyFontStack;
 	text-rendering: optimizeLegibility;
 	vertical-align: baseline;
-	color: #34495E;
+	color: $gray5;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	line-height: 0.375em;
 	font-size: 1em;
 	height: inherit;
 }
+
+// Grid 
+// Source: http://oocss.org/grids_docs.html & https://ux.mailchimp.com/patterns/grids
+
+line {
+	zoom:1
+}
+
+.line:before,.line:after {
+	content:" ";
+	display:table;
+}
+
+.line:after {
+	clear:both
+}
+
+.lastUnit {
+	overflow:hidden;
+	-moz-background-clip:padding-box !important;
+	-webkit-background-clip:padding-box !important;
+	background-clip:padding-box !important;
+	float:left;
+	float:none;
+	width:auto;
+	padding-left:0.75em;
+	padding-right:0.75em
+}
+
+.unit {
+	overflow:hidden;
+	-moz-background-clip:padding-box !important;
+	-webkit-background-clip:padding-box !important;
+	background-clip:padding-box !important;
+	float:left;
+	padding-left:0.75em;
+	padding-right:0.75em
+}
+
+.size8of8 {
+	width:100%;
+}
+
+.size7of8 {
+	width:87.5%;
+}
+
+.size6of8 {
+	width:75%;
+}
+
+.size5of8 {
+	width:62.5%;
+}
+
+.size4of8 {
+	width:50%;
+}
+
+.size3of8 {
+	width:37.5%;
+}
+
+.size2of8 {
+	width:25%;
+}
+
+.size1of8 {
+	width:12.5%;
+}
+
+.size4of4 {
+	width:100%;
+}
+
+.size3of4 {
+	width:75%;
+}
+
+.size2of4 {
+	width:50%;
+}
+
+.size1of4 {
+	width:25%;
+}
+
+.size2of2 {
+	width:100%;
+}
+
+.size1of2 {
+	width:50%;
+}
+
+.size3of3 {
+	width:100%;
+}
+
+.size2of3 {
+	width:66.66666666666666%;
+}
+
+.size1of3 {
+	width:33.33333333333333%;
+}
+
+.size1of1 {
+	width:100%;
+}
+
+// Could potentially set a max-width so things never scale out too far
+// .size1of2:first-child {
+// 	max-width:580px;
+// }
+
+// .size1of2.maintain-width {
+// 	/* max-width:inherit */
+// }
+
+// Typography
 
 .h0 {
 	font-family: $titleFontStack;
@@ -65,7 +186,7 @@ h1, .h1 {
 
 h2, .h2 {
 	font-family: $titleFontStack;
-	color: #7F8C8D;
+	color: $gray4;
 	font-size: 2.25em;
 	line-height: 1.3333333333em;
 	margin-bottom: 0.33333333333333em;
@@ -90,7 +211,7 @@ h4, .h4, h5, h6 {
 	font-family: $bodyFontStack;
 	font-size: 1.625em;
 	line-height: 1.38461538461538em;
-	padding-top: 0.5625em;
+	padding-top: 0.15em;
 	margin-bottom: 0.34615384615385em;
 }
 
@@ -135,8 +256,64 @@ a:hover, a:visited:hover {
 a.anchor {
 	display: block;
 	position: relative;
-	top: -120px;
+	top: -7.5em;
 	visibility: hidden;
+}
+
+code, kbd, pre, samp {
+	font-family: $codeFontStack;
+	padding: 0.125em 0.25em;
+	font-size: 90%;
+	color: $redDark;
+	background-color: lighten($redDark, 50%);
+	white-space: nowrap;
+	border-radius: 4px;
+}
+
+// Input
+
+textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+	display: inline-block;
+	padding: 0 0.625em;
+	border-radius: 0.3125em;
+	min-width: 3.75em;
+	max-width: 37.5em;
+	width: 100%;
+	min-height: 2.25em;
+	background-color: $white;
+	border: 2px solid $gray3;
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
+	border: 2px solid $blueLight;
+	outline: none;
+}
+
+// Placeholder grays, unable to combine into one rule or else browser will ignore
+input::-webkit-input-placeholder {
+	color: $gray2;
+}
+input::-moz-placeholder {
+	color: $gray2;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+	color: $gray2;
+}
+input:-ms-input-placeholder { 
+	color: $gray2;
+}
+
+textarea::-webkit-input-placeholder {
+	color: $gray2;
+}
+textarea::-moz-placeholder {
+	color: $gray2;
+}
+textarea:-moz-placeholder {   /* Older versions of Firefox */
+	color: $gray2;
+}
+textarea:-ms-input-placeholder { 
+	color: $gray2;
 }
 
 #wrap {
@@ -250,7 +427,7 @@ a.anchor {
 }
 
 #mainNav.slideUp {
-		top: -60px;
+		top: -3.75em;
 	}
 
 #mainNav.slideDown {
@@ -265,7 +442,7 @@ a.anchor {
 	top: 0;
 	left: 0;
 	width: 11.25em;
-	padding-top: 60px;
+	padding-top: 3.75em;
 	z-index: 100;
 
 	li {
@@ -298,48 +475,4 @@ a.anchor {
 	.icon + a {
 		padding-left: 0.625em;
 	}
-}
-
-textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
-	display: inline-block;
-	padding: 0 0.625em;
-	border-radius: 0.3125em;
-	min-width: 3.75em;
-	max-width: 37.5em;
-	width: 100%;
-	min-height: 2.25em;
-	background-color: #fff;
-	border: 2px solid $gray3;
-}
-
-textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
-	border: 2px solid $blueLight;
-	outline: none;
-}
-
-// Placeholder grays, unable to combine into one rule or else browser will ignore
-input::-webkit-input-placeholder {
-	color: $gray2;
-}
-input::-moz-placeholder {
-	color: $gray2;
-}
-input:-moz-placeholder {   /* Older versions of Firefox */
-	color: $gray2;
-}
-input:-ms-input-placeholder { 
-	color: $gray2;
-}
-
-textarea::-webkit-input-placeholder {
-	color: $gray2;
-}
-textarea::-moz-placeholder {
-	color: $gray2;
-}
-textarea:-moz-placeholder {   /* Older versions of Firefox */
-	color: $gray2;
-}
-textarea:-ms-input-placeholder { 
-	color: $gray2;
 }

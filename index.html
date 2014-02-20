@@ -4,9 +4,6 @@
 	<title>Styleguide</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-	<!-- Baseline stuff  -->
-	<script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
-	<script>window.onload = function() {baseliner = new Baseliner({ gridHeight: 6, gridColor: 'red', gridOffset: 0, gridOpacity: 20});}</script>
 </head>
 
 <body>
@@ -25,9 +22,9 @@
 		</nav>
 		<ul id="sideNav">
 				<li class=""><span class="panjiva-icon-home icon"></span><a href="#top">Top</a></li>
-				<li><a href="">Grid</a></li>
+				<li><a href="#grid">Grid</a></li>
 				<li><a href="#typography">Typography</a></li>
-				<li><a href="">Color</a></li>
+				<li><a href="#color">Color</a></li>
 				<li><a href="">Forms</a></li>
 				<li><a href="">Navigation</a></li>
 				<li><a href="">Feedback</a></li>
@@ -39,10 +36,79 @@
 			<a name="top" class="anchor"></a>
 			<h1>Styleguide</h1>
 			<p>This is our styleguide. There are many like it but this one's ours. It borrows heavily from <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> and <a href="https://ux.mailchimp.com/patterns">Mailchimp's pattern library</a>.</p>
+			<div id="grid" class="section">
+				<a name="grid"></a>
+				<h2>Grid</h2>
+				<div class="line">
+					<div class="unit size1of1">
+						<p>size1of1</p>
+					</div>
+				</div>
+				<div class="line">
+					<div class="unit size1of2">
+						<p>size1of2</p>
+					</div>
+					<div class="unit size1of2 lastUnit">
+						<p>size1of2</p>
+					</div>
+				</div>
+				<div class="line">
+					<div class="unit size1of3">
+						<p>size1of3</p>
+					</div>
+					<div class="unit size1of3">
+						<p>size1of3</p>
+					</div>
+					<div class="unit size1of3 lastUnit">
+						<p>size1of3</p>
+					</div>
+				</div>
+				<div class="line">
+					<div class="unit size1of4">
+						<p>size1of4</p>
+					</div>
+					<div class="unit size1of4">
+						<p>size1of4</p>
+					</div>
+					<div class="unit size1of4">
+						<p>size1of4</p>
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<p>size1of4</p>
+					</div>
+				</div>
+				<div class="line">
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8">
+						<p>size1of8</p>
+					</div>
+					<div class="unit size1of8 lastUnit">
+						<p>size1of8</p>
+					</div>
+				</div>
+
+			</div>
 			<div class="section">
 				<a name="typography"></a>
 				<h2>Typography</h2>
-				<h1 class="h0">H0 Marketing headline</h1>
+				<h1 class="h0">H0 marketing headline</h1>
 				<h1>H1 headline</h1>
 				<h2>H2 subheadline</h2>
 				<h3>H3 section header</h3>
@@ -50,34 +116,79 @@
 				<p class="large"> Large text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p> Normal text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<b>Bolded text is in Helvetica Neue Medium.</b> <a>This is a link.</a></p>
 			</div>
-			<div class="section">
-				<a name="typography"></a>
+			<div id="color" class="section">
+				<a name="color"></a>
 				<h2>Color</h2>
-				<div class="swatch" style="background-color:#ECF0F1">#ECF0F1</div>
-				<div class="swatch" style="background-color:#BDC3C7">#BDC3C7</div>
-				<div class="swatch" style="background-color:#95A5A6">#95A5A6</div>
-				<div class="swatch" style="background-color:#7F8C8D; color:white">#7F8C8D</div>
-				<div class="swatch" style="background-color:#34495E; color:white">#34495E</div>
-				<div class="swatch" style="background-color:#2C3E50; color:white">#2C3E50</div>
-				<div class="swatch" style="background-color:#15BDED; color:white">#15BDED</div>
-				<div class="swatch" style="background-color:#00A1CF; color:white">#00A1CF</div>
-				<div class="swatch" style="background-color:#2ECC71; color:white">#2ECC71</div>
-				<div class="swatch" style="background-color:#27AE60; color:white">#27AE60</div>
-				<div class="swatch" style="background-color:#F1C40F; color:white">#F1C40F</div>
-				<div class="swatch" style="background-color:#F39C12; color:white">#F39C12</div>
-				<div class="swatch" style="background-color:#E67E22; color:white">#E67E22</div>
-				<div class="swatch" style="background-color:#D35400; color:white">#D35400</div>
-				<div class="swatch" style="background-color:#E74C3C; color:white">#E74C3C</div>
-				<div class="swatch" style="background-color:#C0392B; color:white">#C0392B</div>
-				<div class="swatch" style="background-color:#9B59B6; color:white">#9B59B6</div>
-				<div class="swatch" style="background-color:#8E44AD; color:white">#8E44AD</div>
+				<div class="line">
+					<div class="unit size1of4" style="background-color:#ECF0F1">
+						<span class="swatch">$gray1<br />#ECF0F1</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#BDC3C7">
+						<span class="swatch">$gray2<br />#BDC3C7</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#95A5A6">
+						<span class="swatch">$gray3<br />#95A5A6</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#7F8C8D; color:white">
+						<span class="swatch">$gray4<br />#7F8C8D</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#34495E; color:white">
+						<span class="swatch">$gray5<br />#34495E</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#2C3E50; color:white">
+						<span class="swatch">$gray6<br />#2C3E50</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#15BDED; color:white">
+						<span class="swatch">$blueLight<br />#15BDED</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#00A1CF; color:white">
+						<span class="swatch">$blueDark<br />#00A1CF</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#2ECC71; color:white">
+						<span class="swatch">$greenLight<br />#2ECC71</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#27AE60; color:white">
+						<span class="swatch">$greenDark<br />#27AE60</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#F1C40F; color:white">
+						<span class="swatch">$yellowLight<br />#F1C40F</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#F39C12; color:white">
+						<span class="swatch">$yellowDark<br />#F39C12</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#E67E22; color:white">
+						<span class="swatch">$orangeLight<br />#E67E22</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#D35400; color:white">
+						<span class="swatch">$yellowDark<br />#D35400</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#E74C3C; color:white">
+						<span class="swatch">$redLight<br />#E74C3C</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#C0392B; color:white">
+						<span class="swatch">$redDark<br />#C0392B</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#9B59B6; color:white">
+						<span class="swatch">$purpleLight<br />#9B59B6</span>
+					</div>
+					<div class="unit size1of4" style="background-color:#8E44AD; color:white">
+						<span class="swatch">$purpleDark<br />#8E44AD</span>
+					</div>
+					</div>
+				</div>
+				
+				<div>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code></div>
 			</div>
-			<div>
+			<div class="section">
 	
 			</div>
 		</div>
 
 	</div>
+
+	<!-- Baseline stuff  -->
+	<script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
+	<script>window.onload = function() {baseliner = new Baseliner({ gridHeight: 6, gridColor: 'red', gridOffset: 0, gridOpacity: 20});}</script>
 
 	<!-- Hiding navigation -->
 	<script src="js/headroom.js"></script>
