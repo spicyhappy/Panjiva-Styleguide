@@ -241,6 +241,7 @@ p {
 a, a:visited {
 	color: $blueLight;
 	text-decoration: none;
+	font-weight: bold;
 }
 
 a:not(.img), a:visited:not(.img) { 
@@ -248,7 +249,7 @@ a:not(.img), a:visited:not(.img) {
 	color: $blueLight;
 }
 
-a:hover, a:visited:hover {
+a:hover, a:visited:hover, a:active {
 	color: darken($blueLight, 20%);
 }
 
@@ -273,13 +274,13 @@ code, kbd, pre, samp {
 // Forms
 
 button {
-	height: 36px;
-	margin-right: 18px;
+	height: 2.57142857142857em;
+	margin-right: 1.28571428571429em;
 	display: inline-block;
 	white-space: nowrap;
-	line-height: 36px;
-	font-size: 14px;
-	padding: 0 18px;
+	line-height: 2.57142857142857em;
+	font-size: 0.875em;
+	padding: 0 1.28571428571429em;
 	cursor: pointer;
 	overflow: hidden;
 	font-weight: bold;
@@ -293,10 +294,20 @@ button {
 	color: white;
 	letter-spacing: .02em;
 	background-color: $gray3;
+	outline: none;
+}
+
+button:hover, button:active {
+	background-color: darken($gray3, 20%);
+	outline: none;
 }
 
 button.buttonPrimary {
 	background-color: $blueLight;
+}
+
+button.buttonPrimary:hover, button.buttonPrimary:active {
+	background-color: darken($blueLight, 20%)
 }
 
 button:disabled {
@@ -304,16 +315,20 @@ button:disabled {
 	color: $gray2;
 }
 
-.buttonLink {
-	background-color: none;
+button.buttonLink {
 	color: $blueLight;
 	background-color: transparent;
 	border-bottom: 2px solid $blueLight;
 	border-radius: 0;
 	line-height: 1.11111111111111em;
 	padding: 0;
-	height: 18px;
-	margin: 9px 18px;
+	height: 1.28571428571429em;
+	margin: 0.64285714285714em 0;
+}
+
+button.buttonLink:hover, button.buttonLink:active{
+	color: darken($blueLight, 20%);
+	border-bottom: 2px solid darken($blueLight, 20%);
 }
 
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
@@ -326,6 +341,11 @@ textarea, input[type="text"], input[type="password"], input[type="file"], input[
 	min-height: 2.25em;
 	background-color: $white;
 	border: 2px solid $gray3;
+}
+
+button .icon {
+	padding-right: 0.42857142857143em;
+	color: inherit;
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
@@ -359,6 +379,9 @@ textarea:-moz-placeholder {   /* Older versions of Firefox */
 textarea:-ms-input-placeholder { 
 	color: $gray2;
 }
+
+
+// Icons
 
 #wrap {
 	background-color: $white;
@@ -416,17 +439,19 @@ textarea:-ms-input-placeholder {
 
 		.inputLink {
 			position: absolute;
-			right: 2.5em;
+			right: 2.75em;
 			border:none;
 			color: $gray5;
+			font-weight: normal;
 		}
 
 		.icon {
 			position: absolute;
-			right: 0.625em;
+			right: 0.7em;
+			line-height: 2.9em;
 		}
 
-		.inputLink, .icon {
+		.inputLink {
 			line-height: 3.75em;
 		}
 
@@ -441,10 +466,8 @@ textarea:-ms-input-placeholder {
 		margin-right: 2.5em;
 
 		.icon {
-			font-size: 0.2em;
 			position: relative;
-			margin-left: 0.625em;
-			bottom: 2px;
+			margin-left: 0.2em;
 		}
 
 		li {
@@ -513,10 +536,10 @@ textarea:-ms-input-placeholder {
 
 	.icon {
 		color: inherit;
-		padding-left: 1.25em;
+		padding-left: 1em;
 	}
 
 	.icon + a {
-		padding-left: 0.625em;
+		padding-left: 0.4em;
 	}
 }
