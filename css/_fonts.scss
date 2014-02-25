@@ -40,11 +40,10 @@
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	font-size: 20px;
+	font-size: 1.25em;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
 
 .panjiva-icon-right-double:before {
 	content: "\e609";
@@ -111,27 +110,6 @@
 }
 .panjiva-icon-upload:before {
 	content: "\e64f";
-}
-.panjiva-icon-shipments-lg:before {
-	content: "\e606";
-}
-.panjiva-icon-contact-lg:before {
-	content: "\e601";
-}
-.panjiva-icon-mail-lg:before {
-	content: "\e604";
-}
-.panjiva-icon-factory-lg:before {
-	content: "\e607";
-}
-.panjiva-icon-tools-lg:before {
-	content: "\e602";
-}
-.panjiva-icon-search-lg:before {
-	content: "\e603";
-}
-.panjiva-icon-company-search-lg:before {
-	content: "\e605";
 }
 .panjiva-icon-building-lg:before {
 	content: "\e600";
@@ -288,4 +266,58 @@
 }
 .panjiva-icon-download:before {
 	content: "\e650";
+}
+.panjiva-icon-wechat:before {
+	content: "\e651";
+}
+.panjiva-icon-facebook:before {
+	content: "\e652";
+}
+.panjiva-icon-twitter:before {
+	content: "\e653";
+}
+.panjiva-icon-rss:before {
+	content: "\e654";
+}
+.panjiva-icon-video:before {
+	content: "\e655";
+}
+.panjiva-icon-google-plus:before {
+	content: "\e656";
+}
+.panjiva-icon-linkedin:before {
+	content: "\e657";
+}
+.panjiva-icon-weibo:before {
+	content: "\e658";
+}
+.panjiva-icon-renren:before {
+	content: "\e659";
+}
+.panjiva-icon-qzone:before {
+	content: "\e65a";
+}
+.panjiva-icon-baidu:before {
+	content: "\e65b";
+}
+.panjiva-icon-shipments-lg:before {
+	content: "\e606";
+}
+.panjiva-icon-contact-lg:before {
+	content: "\e601";
+}
+.panjiva-icon-mail-lg:before {
+	content: "\e604";
+}
+.panjiva-icon-factory-lg:before {
+	content: "\e607";
+}
+.panjiva-icon-tools-lg:before {
+	content: "\e602";
+}
+.panjiva-icon-search-lg:before {
+	content: "\e603";
+}
+.panjiva-icon-company-search-lg:before {
+	content: "\e605";
 }
