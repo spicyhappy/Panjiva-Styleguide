@@ -62,6 +62,15 @@ line {
 	clear:both
 }
 
+.unit {
+	overflow:hidden;
+	-moz-background-clip:padding-box !important;
+	-webkit-background-clip:padding-box !important;
+	background-clip:padding-box !important;
+	float:left;
+	padding-right: 1.5em;
+}
+
 .lastUnit {
 	overflow:hidden;
 	-moz-background-clip:padding-box !important;
@@ -70,18 +79,7 @@ line {
 	float:left;
 	float:none;
 	width:auto;
-	padding-left:0.75em;
-	padding-right:0.75em
-}
-
-.unit {
-	overflow:hidden;
-	-moz-background-clip:padding-box !important;
-	-webkit-background-clip:padding-box !important;
-	background-clip:padding-box !important;
-	float:left;
-	padding-left:0.75em;
-	padding-right:0.75em
+	padding-right:0;
 }
 
 .size8of8 {

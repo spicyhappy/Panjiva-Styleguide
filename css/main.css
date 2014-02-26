@@ -28,7 +28,7 @@
   font-style: normal;
 }
 
-/* line 36, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 36, _fonts.scss */
 [class^="panjiva-icon-"], [class*=" panjiva-icon-"] {
   font-family: 'panicons';
   speak: none;
@@ -42,468 +42,468 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 49, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 49, _fonts.scss */
 .panjiva-icon-right-double:before {
   content: "\e609";
 }
 
-/* line 52, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 52, _fonts.scss */
 .panjiva-icon-left-double:before {
   content: "\e60a";
 }
 
-/* line 55, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 55, _fonts.scss */
 .panjiva-icon-left-circle:before {
   content: "\e60b";
 }
 
-/* line 58, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 58, _fonts.scss */
 .panjiva-icon-left:before {
   content: "\e60c";
 }
 
-/* line 61, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 61, _fonts.scss */
 .panjiva-icon-right-circle:before {
   content: "\e60d";
 }
 
-/* line 64, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 64, _fonts.scss */
 .panjiva-icon-right:before {
   content: "\e60e";
 }
 
-/* line 67, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 67, _fonts.scss */
 .panjiva-icon-down-circle:before {
   content: "\e60f";
 }
 
-/* line 70, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 70, _fonts.scss */
 .panjiva-icon-down:before {
   content: "\e610";
 }
 
-/* line 73, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 73, _fonts.scss */
 .panjiva-icon-up-circle:before {
   content: "\e611";
 }
 
-/* line 76, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 76, _fonts.scss */
 .panjiva-icon-up:before {
   content: "\e612";
 }
 
-/* line 79, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 79, _fonts.scss */
 .panjiva-icon-x-circle:before {
   content: "\e613";
 }
 
-/* line 82, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 82, _fonts.scss */
 .panjiva-icon-key:before {
   content: "\e61e";
 }
 
-/* line 85, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 85, _fonts.scss */
 .panjiva-icon-unlock:before {
   content: "\e61f";
 }
 
-/* line 88, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 88, _fonts.scss */
 .panjiva-icon-user:before {
   content: "\e629";
 }
 
-/* line 91, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 91, _fonts.scss */
 .panjiva-icon-moon:before {
   content: "\e62a";
 }
 
-/* line 94, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 94, _fonts.scss */
 .panjiva-icon-location:before {
   content: "\e635";
 }
 
-/* line 97, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 97, _fonts.scss */
 .panjiva-icon-search:before {
   content: "\e636";
 }
 
-/* line 100, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 100, _fonts.scss */
 .panjiva-icon-microphone-no:before {
   content: "\e641";
 }
 
-/* line 103, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 103, _fonts.scss */
 .panjiva-icon-microphone:before {
   content: "\e642";
 }
 
-/* line 106, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 106, _fonts.scss */
 .panjiva-icon-home:before {
   content: "\e64e";
 }
 
-/* line 109, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 109, _fonts.scss */
 .panjiva-icon-mail:before {
   content: "\e64d";
 }
 
-/* line 112, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 112, _fonts.scss */
 .panjiva-icon-upload:before {
   content: "\e64f";
 }
 
-/* line 115, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 115, _fonts.scss */
 .panjiva-icon-building-lg:before {
   content: "\e600";
 }
 
-/* line 118, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 118, _fonts.scss */
 .panjiva-icon-bank:before {
   content: "\e64b";
 }
 
-/* line 121, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 121, _fonts.scss */
 .panjiva-icon-web:before {
   content: "\e64a";
 }
 
-/* line 124, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 124, _fonts.scss */
 .panjiva-icon-folder:before {
   content: "\e649";
 }
 
-/* line 127, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 127, _fonts.scss */
 .panjiva-icon-comment:before {
   content: "\e648";
 }
 
-/* line 130, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 130, _fonts.scss */
 .panjiva-icon-graph:before {
   content: "\e647";
 }
 
-/* line 133, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 133, _fonts.scss */
 .panjiva-icon-print:before {
   content: "\e646";
 }
 
-/* line 136, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 136, _fonts.scss */
 .panjiva-icon-clipboard:before {
   content: "\e645";
 }
 
-/* line 139, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 139, _fonts.scss */
 .panjiva-icon-paper:before {
   content: "\e644";
 }
 
-/* line 142, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 142, _fonts.scss */
 .panjiva-icon-photo:before {
   content: "\e643";
 }
 
-/* line 145, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 145, _fonts.scss */
 .panjiva-icon-calling:before {
   content: "\e63f";
 }
 
-/* line 148, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 148, _fonts.scss */
 .panjiva-icon-megaphone:before {
   content: "\e63e";
 }
 
-/* line 151, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 151, _fonts.scss */
 .panjiva-icon-contacts:before {
   content: "\e63d";
 }
 
-/* line 154, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 154, _fonts.scss */
 .panjiva-icon-id:before {
   content: "\e63c";
 }
 
-/* line 157, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 157, _fonts.scss */
 .panjiva-icon-calendar:before {
   content: "\e63b";
 }
 
-/* line 160, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 160, _fonts.scss */
 .panjiva-icon-clock:before {
   content: "\e63a";
 }
 
-/* line 163, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 163, _fonts.scss */
 .panjiva-icon-compose:before {
   content: "\e639";
 }
 
-/* line 166, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 166, _fonts.scss */
 .panjiva-icon-settings:before {
   content: "\e638";
 }
 
-/* line 169, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 169, _fonts.scss */
 .panjiva-icon-lightbulb:before {
   content: "\e637";
 }
 
-/* line 172, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 172, _fonts.scss */
 .panjiva-icon-star:before {
   content: "\e633";
 }
 
-/* line 175, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 175, _fonts.scss */
 .panjiva-icon-link:before {
   content: "\e632";
 }
 
-/* line 178, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 178, _fonts.scss */
 .panjiva-icon-heart:before {
   content: "\e631";
 }
 
-/* line 181, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 181, _fonts.scss */
 .panjiva-icon-gift:before {
   content: "\e630";
 }
 
-/* line 184, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 184, _fonts.scss */
 .panjiva-icon-shirt:before {
   content: "\e62f";
 }
 
-/* line 187, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 187, _fonts.scss */
 .panjiva-icon-trash:before {
   content: "\e62e";
 }
 
-/* line 190, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 190, _fonts.scss */
 .panjiva-icon-anchor:before {
   content: "\e62d";
 }
 
-/* line 193, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 193, _fonts.scss */
 .panjiva-icon-umbrella:before {
   content: "\e62c";
 }
 
-/* line 196, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 196, _fonts.scss */
 .panjiva-icon-sun:before {
   content: "\e62b";
 }
 
-/* line 199, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 199, _fonts.scss */
 .panjiva-icon-group:before {
   content: "\e628";
 }
 
-/* line 202, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 202, _fonts.scss */
 .panjiva-icon-cart:before {
   content: "\e627";
 }
 
-/* line 205, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 205, _fonts.scss */
 .panjiva-icon-database:before {
   content: "\e626";
 }
 
-/* line 208, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 208, _fonts.scss */
 .panjiva-icon-briefcase:before {
   content: "\e625";
 }
 
-/* line 211, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 211, _fonts.scss */
 .panjiva-icon-flag:before {
   content: "\e624";
 }
 
-/* line 214, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 214, _fonts.scss */
 .panjiva-icon-undo:before {
   content: "\e623";
 }
 
-/* line 217, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 217, _fonts.scss */
 .panjiva-icon-cloud-upload:before {
   content: "\e622";
 }
 
-/* line 220, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 220, _fonts.scss */
 .panjiva-icon-cloud-download:before {
   content: "\e621";
 }
 
-/* line 223, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 223, _fonts.scss */
 .panjiva-icon-lock:before {
   content: "\e620";
 }
 
-/* line 226, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 226, _fonts.scss */
 .panjiva-icon-exclamation:before {
   content: "\e61c";
 }
 
-/* line 229, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 229, _fonts.scss */
 .panjiva-icon-info:before {
   content: "\e61b";
 }
 
-/* line 232, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 232, _fonts.scss */
 .panjiva-icon-minimize:before {
   content: "\e61a";
 }
 
-/* line 235, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 235, _fonts.scss */
 .panjiva-icon-maximize:before {
   content: "\e619";
 }
 
-/* line 238, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 238, _fonts.scss */
 .panjiva-icon-add:before {
   content: "\e618";
 }
 
-/* line 241, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 241, _fonts.scss */
 .panjiva-icon-add-circle:before {
   content: "\e617";
 }
 
-/* line 244, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 244, _fonts.scss */
 .panjiva-icon-check:before {
   content: "\e616";
 }
 
-/* line 247, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 247, _fonts.scss */
 .panjiva-icon-check-circle:before {
   content: "\e615";
 }
 
-/* line 250, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 250, _fonts.scss */
 .panjiva-icon-x:before {
   content: "\e614";
 }
 
-/* line 253, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 253, _fonts.scss */
 .panjiva-icon-question:before {
   content: "\e61d";
 }
 
-/* line 256, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 256, _fonts.scss */
 .panjiva-icon-add-user:before {
   content: "\e608";
 }
 
-/* line 259, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 259, _fonts.scss */
 .panjiva-icon-paperclip:before {
   content: "\e634";
 }
 
-/* line 262, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 262, _fonts.scss */
 .panjiva-icon-call:before {
   content: "\e640";
 }
 
-/* line 265, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 265, _fonts.scss */
 .panjiva-icon-building:before {
   content: "\e64c";
 }
 
-/* line 268, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 268, _fonts.scss */
 .panjiva-icon-download:before {
   content: "\e650";
 }
 
-/* line 271, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 271, _fonts.scss */
 .panjiva-icon-wechat:before {
   content: "\e651";
 }
 
-/* line 274, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 274, _fonts.scss */
 .panjiva-icon-facebook:before {
   content: "\e652";
 }
 
-/* line 277, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 277, _fonts.scss */
 .panjiva-icon-twitter:before {
   content: "\e653";
 }
 
-/* line 280, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 280, _fonts.scss */
 .panjiva-icon-rss:before {
   content: "\e654";
 }
 
-/* line 283, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 283, _fonts.scss */
 .panjiva-icon-video:before {
   content: "\e655";
 }
 
-/* line 286, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 286, _fonts.scss */
 .panjiva-icon-google-plus:before {
   content: "\e656";
 }
 
-/* line 289, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 289, _fonts.scss */
 .panjiva-icon-linkedin:before {
   content: "\e657";
 }
 
-/* line 292, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 292, _fonts.scss */
 .panjiva-icon-weibo:before {
   content: "\e658";
 }
 
-/* line 295, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 295, _fonts.scss */
 .panjiva-icon-renren:before {
   content: "\e659";
 }
 
-/* line 298, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 298, _fonts.scss */
 .panjiva-icon-qzone:before {
   content: "\e65a";
 }
 
-/* line 301, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 301, _fonts.scss */
 .panjiva-icon-baidu:before {
   content: "\e65b";
 }
 
-/* line 304, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 304, _fonts.scss */
 .panjiva-icon-shipments-lg:before {
   content: "\e606";
 }
 
-/* line 307, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 307, _fonts.scss */
 .panjiva-icon-contact-lg:before {
   content: "\e601";
 }
 
-/* line 310, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 310, _fonts.scss */
 .panjiva-icon-mail-lg:before {
   content: "\e604";
 }
 
-/* line 313, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 313, _fonts.scss */
 .panjiva-icon-factory-lg:before {
   content: "\e607";
 }
 
-/* line 316, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 316, _fonts.scss */
 .panjiva-icon-tools-lg:before {
   content: "\e602";
 }
 
-/* line 319, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 319, _fonts.scss */
 .panjiva-icon-search-lg:before {
   content: "\e603";
 }
 
-/* line 322, /Users/spicyhappy/Sites/Styleguide/css/_fonts.scss */
+/* line 322, _fonts.scss */
 .panjiva-icon-company-search-lg:before {
   content: "\e605";
 }
 
 /* This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com */
-/* line 1, /Users/spicyhappy/Sites/Styleguide/css/_styleguide.scss */
+/* line 1, _styleguide.scss */
 #color .swatch {
   display: inline-block;
   width: 100%;
@@ -514,18 +514,18 @@
   height: 150%;
 }
 
-/* line 11, /Users/spicyhappy/Sites/Styleguide/css/_styleguide.scss */
+/* line 11, _styleguide.scss */
 #color .unit {
   text-align: center;
 }
 
-/* line 15, /Users/spicyhappy/Sites/Styleguide/css/_styleguide.scss */
+/* line 15, _styleguide.scss */
 #grid .line {
   background-color: #d2f2fc;
   margin-bottom: .75em;
 }
 
-/* line 20, /Users/spicyhappy/Sites/Styleguide/css/_styleguide.scss */
+/* line 20, _styleguide.scss */
 #grid .unit p {
   margin-top: .75em;
   background-color: #74d8f4;
@@ -600,6 +600,16 @@ line {
 }
 
 /* line 65, main.scss */
+.unit {
+  overflow: hidden;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  float: left;
+  padding-right: 1.5em;
+}
+
+/* line 74, main.scss */
 .lastUnit {
   overflow: hidden;
   -moz-background-clip: padding-box !important;
@@ -608,112 +618,100 @@ line {
   float: left;
   float: none;
   width: auto;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-right: 0;
 }
 
-/* line 77, main.scss */
-.unit {
-  overflow: hidden;
-  -moz-background-clip: padding-box !important;
-  -webkit-background-clip: padding-box !important;
-  background-clip: padding-box !important;
-  float: left;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-}
-
-/* line 87, main.scss */
+/* line 85, main.scss */
 .size8of8 {
   width: 100%;
 }
 
-/* line 91, main.scss */
+/* line 89, main.scss */
 .size7of8 {
   width: 87.5%;
 }
 
-/* line 95, main.scss */
+/* line 93, main.scss */
 .size6of8 {
   width: 75%;
 }
 
-/* line 99, main.scss */
+/* line 97, main.scss */
 .size5of8 {
   width: 62.5%;
 }
 
-/* line 103, main.scss */
+/* line 101, main.scss */
 .size4of8 {
   width: 50%;
 }
 
-/* line 107, main.scss */
+/* line 105, main.scss */
 .size3of8 {
   width: 37.5%;
 }
 
-/* line 111, main.scss */
+/* line 109, main.scss */
 .size2of8 {
   width: 25%;
 }
 
-/* line 115, main.scss */
+/* line 113, main.scss */
 .size1of8 {
   width: 12.5%;
 }
 
-/* line 119, main.scss */
+/* line 117, main.scss */
 .size4of4 {
   width: 100%;
 }
 
-/* line 123, main.scss */
+/* line 121, main.scss */
 .size3of4 {
   width: 75%;
 }
 
-/* line 127, main.scss */
+/* line 125, main.scss */
 .size2of4 {
   width: 50%;
 }
 
-/* line 131, main.scss */
+/* line 129, main.scss */
 .size1of4 {
   width: 25%;
 }
 
-/* line 135, main.scss */
+/* line 133, main.scss */
 .size2of2 {
   width: 100%;
 }
 
-/* line 139, main.scss */
+/* line 137, main.scss */
 .size1of2 {
   width: 50%;
 }
 
-/* line 143, main.scss */
+/* line 141, main.scss */
 .size3of3 {
   width: 100%;
 }
 
-/* line 147, main.scss */
+/* line 145, main.scss */
 .size2of3 {
   width: 66.66666666666666%;
 }
 
-/* line 151, main.scss */
+/* line 149, main.scss */
 .size1of3 {
   width: 33.33333333333333%;
 }
 
-/* line 155, main.scss */
+/* line 153, main.scss */
 .size1of1 {
   width: 100%;
 }
 
-/* line 170, main.scss */
+/* line 168, main.scss */
 .h0 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   color: #15bded;
@@ -723,7 +721,7 @@ line {
   margin-bottom: 0.47916666666667em;
 }
 
-/* line 179, main.scss */
+/* line 177, main.scss */
 h1, .h1 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   color: #15bded;
@@ -732,7 +730,7 @@ h1, .h1 {
   margin-bottom: 0.5em;
 }
 
-/* line 187, main.scss */
+/* line 185, main.scss */
 h2, .h2 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   color: #7f8c8d;
@@ -741,7 +739,7 @@ h2, .h2 {
   margin-bottom: 0.33333333333333em;
 }
 
-/* line 195, main.scss */
+/* line 193, main.scss */
 h3, .h3 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.5em;
@@ -750,7 +748,7 @@ h3, .h3 {
   margin-bottom: 0.58333333333333em;
 }
 
-/* line 203, main.scss */
+/* line 201, main.scss */
 h4, .h4, h5, h6 {
   font-family: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.125em;
@@ -758,7 +756,7 @@ h4, .h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-/* line 210, main.scss */
+/* line 208, main.scss */
 .xlarge {
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.625em;
@@ -767,7 +765,7 @@ h4, .h4, h5, h6 {
   margin-bottom: 0.34615384615385em;
 }
 
-/* line 218, main.scss */
+/* line 216, main.scss */
 .large {
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.25em;
@@ -776,7 +774,7 @@ h4, .h4, h5, h6 {
   margin-bottom: 0.5em;
 }
 
-/* line 226, main.scss */
+/* line 224, main.scss */
 .normal {
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   font-size: 1em;
@@ -786,32 +784,32 @@ h4, .h4, h5, h6 {
   font-weight: normal;
 }
 
-/* line 235, main.scss */
+/* line 233, main.scss */
 p {
   font-size: 1em;
   line-height: 1.5em;
   margin-bottom: 0.75em;
 }
 
-/* line 241, main.scss */
+/* line 239, main.scss */
 a, a:visited {
   color: #15bded;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* line 247, main.scss */
+/* line 245, main.scss */
 a:not(.img), a:visited:not(.img) {
   border-bottom: 2px solid;
   color: #15bded;
 }
 
-/* line 252, main.scss */
+/* line 250, main.scss */
 a:hover, a:visited:hover, a:active {
   color: #0b7391;
 }
 
-/* line 257, main.scss */
+/* line 255, main.scss */
 a.anchor {
   display: block;
   position: relative;
@@ -819,7 +817,7 @@ a.anchor {
   visibility: hidden;
 }
 
-/* line 264, main.scss */
+/* line 262, main.scss */
 code, kbd, pre, samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   padding: 0.125em 0.25em;
@@ -830,7 +828,7 @@ code, kbd, pre, samp {
   border-radius: 4px;
 }
 
-/* line 276, main.scss */
+/* line 274, main.scss */
 button {
   height: 2.57142857142857em;
   margin-right: 1.28571428571429em;
@@ -855,29 +853,29 @@ button {
   outline: none;
 }
 
-/* line 300, main.scss */
+/* line 298, main.scss */
 button:hover, button:active {
   background-color: #617374;
   outline: none;
 }
 
-/* line 305, main.scss */
+/* line 303, main.scss */
 button.buttonPrimary {
   background-color: #15bded;
 }
 
-/* line 309, main.scss */
+/* line 307, main.scss */
 button.buttonPrimary:hover, button.buttonPrimary:active {
   background-color: #0b7391;
 }
 
-/* line 313, main.scss */
+/* line 311, main.scss */
 button:disabled {
   background-color: #ecf0f1;
   color: #bdc3c7;
 }
 
-/* line 318, main.scss */
+/* line 316, main.scss */
 button.buttonLink {
   color: #15bded;
   background-color: transparent;
@@ -889,13 +887,13 @@ button.buttonLink {
   margin: 0.64285714285714em 0;
 }
 
-/* line 329, main.scss */
+/* line 327, main.scss */
 button.buttonLink:hover, button.buttonLink:active {
   color: #0b7391;
   border-bottom: 2px solid #0b7391;
 }
 
-/* line 334, main.scss */
+/* line 332, main.scss */
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
   display: inline-block;
   padding: 0 0.625em;
@@ -908,61 +906,61 @@ textarea, input[type="text"], input[type="password"], input[type="file"], input[
   border: 2px solid #95a5a6;
 }
 
-/* line 346, main.scss */
+/* line 344, main.scss */
 button .icon {
   padding-right: 0.42857142857143em;
   color: inherit;
 }
 
-/* line 351, main.scss */
+/* line 349, main.scss */
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
   border: 2px solid #15bded;
   outline: none;
 }
 
-/* line 357, main.scss */
+/* line 355, main.scss */
 input::-webkit-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 360, main.scss */
+/* line 358, main.scss */
 input::-moz-placeholder {
   color: #bdc3c7;
 }
 
-/* line 363, main.scss */
+/* line 361, main.scss */
 input:-moz-placeholder {
   /* Older versions of Firefox */
   color: #bdc3c7;
 }
 
-/* line 366, main.scss */
+/* line 364, main.scss */
 input:-ms-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 370, main.scss */
+/* line 368, main.scss */
 textarea::-webkit-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 373, main.scss */
+/* line 371, main.scss */
 textarea::-moz-placeholder {
   color: #bdc3c7;
 }
 
-/* line 376, main.scss */
+/* line 374, main.scss */
 textarea:-moz-placeholder {
   /* Older versions of Firefox */
   color: #bdc3c7;
 }
 
-/* line 379, main.scss */
+/* line 377, main.scss */
 textarea:-ms-input-placeholder {
   color: #bdc3c7;
 }
 
-/* line 386, main.scss */
+/* line 384, main.scss */
 #wrap {
   background-color: white;
   margin-left: 11.25em;
@@ -972,14 +970,14 @@ textarea:-ms-input-placeholder {
   position: relative;
 }
 
-/* line 395, main.scss */
+/* line 393, main.scss */
 #content {
   background-color: white;
   padding: 3em 2.5em;
   margin-top: 3.75em;
 }
 
-/* line 402, main.scss */
+/* line 400, main.scss */
 #mainNav {
   position: fixed;
   top: 0;
@@ -991,13 +989,13 @@ textarea:-ms-input-placeholder {
   z-index: 200;
   transition: all .2s ease-in-out;
 }
-/* line 412, main.scss */
+/* line 410, main.scss */
 #mainNav .logo {
   width: 11.25em;
   height: 100%;
   display: inline-block;
 }
-/* line 417, main.scss */
+/* line 415, main.scss */
 #mainNav .logo img {
   position: relative;
   top: .5em;
@@ -1005,22 +1003,22 @@ textarea:-ms-input-placeholder {
   padding-top: 0.5625em;
   height: 2.25em;
 }
-/* line 426, main.scss */
+/* line 424, main.scss */
 #mainNav .search {
   margin-left: 2.5em;
   position: relative;
 }
-/* line 430, main.scss */
+/* line 428, main.scss */
 #mainNav .search input {
   width: 30%;
   min-width: 22.5em;
   border: 2px solid #a3e5f8;
 }
-/* line 436, main.scss */
+/* line 434, main.scss */
 #mainNav .search input:focus {
   border: 2px solid #0f99c0;
 }
-/* line 440, main.scss */
+/* line 438, main.scss */
 #mainNav .search .inputLink {
   position: absolute;
   right: 2.75em;
@@ -1028,60 +1026,60 @@ textarea:-ms-input-placeholder {
   color: #34495e;
   font-weight: normal;
 }
-/* line 448, main.scss */
+/* line 446, main.scss */
 #mainNav .search .icon {
   position: absolute;
   right: 0.7em;
   line-height: 2.9em;
 }
-/* line 454, main.scss */
+/* line 452, main.scss */
 #mainNav .search .inputLink {
   line-height: 3.75em;
 }
-/* line 458, main.scss */
+/* line 456, main.scss */
 #mainNav .search .inputLink:hover, #mainNav .search .icon:hover {
   opacity: .5;
 }
-/* line 463, main.scss */
+/* line 461, main.scss */
 #mainNav ul {
   display: inline-block;
   float: right;
   margin-right: 2.5em;
 }
-/* line 468, main.scss */
+/* line 466, main.scss */
 #mainNav ul .icon {
   position: relative;
   margin-left: 0.2em;
 }
-/* line 473, main.scss */
+/* line 471, main.scss */
 #mainNav ul li {
   display: inline-block;
   line-height: 3.75em;
   color: #34495e;
 }
-/* line 479, main.scss */
+/* line 477, main.scss */
 #mainNav ul li a {
   border: none;
   font-weight: bold;
   color: inherit;
   padding: 0 1.25em;
 }
-/* line 487, main.scss */
+/* line 485, main.scss */
 #mainNav ul li:hover {
   background-color: #74d8f4;
 }
 
-/* line 496, main.scss */
+/* line 494, main.scss */
 #mainNav.slideUp {
   top: -3.75em;
 }
 
-/* line 500, main.scss */
+/* line 498, main.scss */
 #mainNav.slideDown {
   top: 0;
 }
 
-/* line 504, main.scss */
+/* line 502, main.scss */
 #sideNav {
   overflow-y: auto;
   background-color: #ecf0f1;
@@ -1093,34 +1091,34 @@ textarea:-ms-input-placeholder {
   padding-top: 3.75em;
   z-index: 100;
 }
-/* line 515, main.scss */
+/* line 513, main.scss */
 #sideNav li {
   font-size: 1em;
   line-height: 3.75em;
   color: #95a5a6;
 }
-/* line 520, main.scss */
+/* line 518, main.scss */
 #sideNav li a {
   padding: 0 1.25em;
   border: none;
   font-weight: bold;
   color: inherit;
 }
-/* line 528, main.scss */
+/* line 526, main.scss */
 #sideNav li.selected {
   color: #34495e;
 }
-/* line 532, main.scss */
+/* line 530, main.scss */
 #sideNav li:hover {
   background-color: rgba(189, 195, 199, 0.3);
   color: #34495e;
 }
-/* line 537, main.scss */
+/* line 535, main.scss */
 #sideNav .icon {
   color: inherit;
   padding-left: 1em;
 }
-/* line 542, main.scss */
+/* line 540, main.scss */
 #sideNav .icon + a {
   padding-left: 0.4em;
 }
