@@ -378,6 +378,50 @@ textarea:-ms-input-placeholder {
 	color: $gray2;
 }
 
+progress {
+	width: 100%;
+	background-color: #ECF0F1;
+	border: none;
+	height: 1.5em;
+	border-radius: 2px;
+}
+
+progress::-webkit-progress-bar{
+	background-color:#ECF0F1;border-radius:2px
+}
+
+progress::-webkit-progress-value {
+	background:#15BDED;border-radius:2px
+}
+
+progress::-moz-progress-bar{
+	background:#15BDED;border-radius:2px
+}
+
+.localNav {
+	border-bottom: 2px solid $gray1;
+	border-top: 2px solid $gray1;
+	display: block;
+	list-style: none;
+	margin-top: 1.5em;
+	margin-bottom: 1.875em;	
+
+	li {
+		font-weight: bold;
+		display: inline-block;
+		overflow: visible;
+		padding: 0.625em 0.9375em;
+
+		a, a:visited {
+			color: $gray5;
+			border-bottom: none;
+		}
+	}
+
+	li.active a {
+		color: $blueLight;
+	}
+}
 
 // Icons
 
@@ -392,8 +436,9 @@ textarea:-ms-input-placeholder {
 
 #content {
 	background-color: $white;
-	padding: 3em 2.5em;
-	margin-top:3.75em
+	padding: 2.625em 2.5em;
+	padding-right: 3.75em;
+	margin-top: 3.75em;
 
 }
 
@@ -533,11 +578,7 @@ textarea:-ms-input-placeholder {
 	}
 
 	.icon {
+		padding-right: 0.4em;
 		color: inherit;
-		padding-left: 1em;
-	}
-
-	.icon + a {
-		padding-left: 0.4em;
 	}
 }
