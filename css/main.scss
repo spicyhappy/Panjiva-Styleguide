@@ -330,7 +330,7 @@ button.buttonLink:hover, button.buttonLink:active{
 }
 
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
-	display: inline-block;
+	display: block;
 	padding: 0 0.625em;
 	border-radius: 0.3125em;
 	min-width: 3.75em;
@@ -380,29 +380,32 @@ textarea:-ms-input-placeholder {
 
 progress {
 	width: 100%;
-	background-color: #ECF0F1;
+	background-color: $gray1;
 	border: none;
 	height: 1.5em;
 	border-radius: 2px;
 }
 
 progress::-webkit-progress-bar{
-	background-color:#ECF0F1;border-radius:2px
+	background-color:$gray1;
+	border-radius:2px
 }
 
 progress::-webkit-progress-value {
-	background:#15BDED;border-radius:2px
+	background:$blueLight;
+	border-radius:2px
 }
 
 progress::-moz-progress-bar{
-	background:#15BDED;border-radius:2px
+	background:$blueLight;
+	border-radius:2px
 }
 
 fieldset {
 	label, .label {
 		display: inline-block;
 		font-weight: bold;
-		margin-bottom: 4px;
+		margin-bottom: 0.25em;
 	}
 }
 
@@ -424,6 +427,10 @@ fieldset {
 			color: $gray5;
 			border-bottom: none;
 		}
+
+		a:hover, a:visited:hover, a:active {
+			color: lighten($gray5, 40);
+		}
 	}
 
 	li.active a {
@@ -434,18 +441,16 @@ fieldset {
 // Icons
 .iconBlock {
 	background-color: $gray1;
-	height: 60px;
-	width: 60px;
 	border-radius: 3px;
-	padding: 10px;
-	font-size: 40px;
+	padding: 0.3em;
+	font-size: 1.875em;
 }
 
 .iconBlock.disabled {
 	background-color: none;
 	color: $gray2;
 	border: 2px solid $gray2;
-	padding: 8px;
+	padding: 0.23333333333333em;
 }
 
 // Table
@@ -455,19 +460,23 @@ table {
 	border-collapse: collapse;
 	border-color: none;
 
+	thead {
+  		background-color: $gray1;
+	}
+
 	thead td {
 		font-weight: bold;
 	}
 
 	td, th {
 		word-wrap: break-word;
-		border-left: 2px solid #ECF0F1;
-		padding: 24px 20px;
+		border-left: 2px solid $gray1;
+		padding: 0.6875em 1.25em;
 		vertical-align: middle;
 	}
 
 	tr {
-  		border-bottom: 2px solid #ECF0F1;
+  		border-bottom: 2px solid $gray1;
 	}
 
 	td:first-of-type, tr:first-of-type {
@@ -479,7 +488,11 @@ table {
 	}
 
 	tr.focus {
-		background-color: $gray1;
+		background-color: lighten($yellowLight,40);
+
+		td, th {
+			border-color: lighten($yellowLight,40);
+		}
 	}
 }
 
@@ -530,6 +543,7 @@ table {
 		position: relative;
 
 		input {
+			display: inline-block;
 			width: 30%;
 			min-width: 22.5em;
 			border: 2px solid lighten($blueLight, 30%);
@@ -558,7 +572,7 @@ table {
 		}
 
 		.inputLink:hover, .icon:hover {
-			opacity: .5;
+			color: lighten($gray5,40);
 		}
 	}
 
@@ -614,17 +628,18 @@ table {
 	padding-top: 3.75em;
 	z-index: 100;
 
+	a {
+		
+		border: none;
+		font-weight: bold;
+		color: inherit;
+	}
+
 	li {
+		padding: 0 1.25em;
 		font-size: 1em;
 		line-height: 3.75em;
 		color: $gray3;
-
-		a {
-			padding: 0 1.25em;
-			border: none;
-			font-weight: bold;
-			color: inherit;
-		}
 	}
 
 	li.selected {

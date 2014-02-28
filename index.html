@@ -8,7 +8,7 @@
 
 <body>
 	<div id="wrap">
-		<nav id="mainNav" class="">
+		<nav id="mainNav" class="line">
 			<a class="logo img" href=""><img src="img/panjivalogovectorized-white.png" alt="panjiva logo"></a>
 			<span class="search">
 				<input type="text" placeholder="Enter a company or product">
@@ -21,15 +21,14 @@
 			</ul>
 		</nav>
 		<ul id="sideNav">
-				<li class=""><a href="#top"><span class="panjiva-icon-home icon"></span>Top</a></li>
+				<a href="#top"><li class="">Top</li></a>
 				<li><a href="#grid">Grid</a></li>
 				<li><a href="#typography">Typography</a></li>
 				<li><a href="#color">Color</a></li>
 				<li><a href="#forms">Forms</a></li>
-				<li><a href="">Navigation</a></li>
-				<li><a href="">Feedback</a></li>
-				<li><a href="">Icons</a></li>
-				<li><a href="">Miscelleous</a></li>
+				<li><a href="#navigation">Navigation</a></li>
+				<li><a href="#table">Table</a></li>
+				<li><a href="#icons">Icons</a></li>
 		</ul>
 
 		<div id="content">
@@ -114,7 +113,7 @@
 				<h3>H3 section header</h3>
 				<p class="xlarge">Xlarge text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p class="large"> Large text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<p> Normal text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<b>Bolded text is in Helvetica Neue Medium.</b> <a>This is a link.</a></p>
+				<p> Normal text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Bolded text is in Helvetica Neue Medium.</b> <a>This is a link.</a></p>
 			</div>
 
 			<div id="color" class="section">
@@ -193,6 +192,54 @@
 				<div class="line">
 					<button class="buttonLarge">Big</button>
 				</div>
+				<label><input type="checkbox" name="vehicle" value="admin" checked disabled> Admin [?]</label>
+			</div>
+
+			<div class="section">
+				<a name="navigation"></a>
+				<h2>Navigation</h2>
+				<ul class="localNav">
+				<li class="active"><a href="">Account</a></li>
+				<li><a href="">Profile</a></li>
+				<li><a href="">Order History</a></li>
+			</ul>
+				
+			</div>
+
+
+			<div class="table">
+				<a name="table"></a>
+				<h2>Table</h2>
+				<table>
+				<thead>
+					<tr>
+						<td>Name</td>
+						<td>Email</td>
+					</tr>
+				</thead>
+				<tr>
+					<td>Sally Sullivan (me)</td>
+					<td>ssullivan@furniture.com</td>
+				</tr>
+				<tr>
+					<td>Alex Subotnick</td>
+					<td>asubotnick@furniture.com</td>
+				</tr>
+				<tr class="focus">
+					<td>
+						<fieldset>
+							<label for="inputFirstName">Name</label>
+							<input type="text" placeholder="" id="inputFirstName">
+						</fieldset>
+					</td>
+					<td>
+						<fieldset>
+							<span class="label">It's free!</span><br>
+							<button>Invite User</button>
+						</fieldset>
+					</td>
+				</tr>
+			</table>
 			</div>
 
 			<div class="section">
@@ -294,6 +341,7 @@
 				<span class="panjiva-icon-renren"></span>
 				<span class="panjiva-icon-baidu"></span>
 				<span class="panjiva-icon-qzone"></span>
+				<span class="panjiva-icon-user iconBlock">
 			</div>
 
 		</div> <!-- #content -->
