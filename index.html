@@ -34,72 +34,75 @@
 		<div id="content">
 			<a name="top" class="anchor"></a>
 			<h1>Styleguide</h1>
-			<p>This is our styleguide. There are many like it but this one's ours. It borrows heavily from <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> and <a href="https://ux.mailchimp.com/patterns">Mailchimp's pattern library</a>.</p>
+			<p>This is our styleguide. There are many like it but this one's ours. It borrows heavily from <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> and <a href="https://ux.mailchimp.com/patterns">Mailchimp's pattern library</a>. See examples using the styleguide:</p>
+			<ul>
+				<li><a href="settings.html">Settings page</a></li>
+			</ul>
 			<div id="grid" class="section">
 				<a name="grid"></a>
 				<h2>Grid</h2>
 				<div class="line">
 					<div class="unit size1of1 lastUnit">
-						<p>size1of1</p>
+						<div>size1of1</div>
 					</div>
 				</div>
 				<div class="line">
 					<div class="unit size1of2">
-						<p>size1of2</p>
+						<div>size1of2</div>
 					</div>
 					<div class="unit size1of2 lastUnit">
-						<p>size1of2</p>
+						<div>size1of2</div>
 					</div>
 				</div>
 				<div class="line">
 					<div class="unit size1of3">
-						<p>size1of3</p>
+						<div>size1of3</div>
 					</div>
 					<div class="unit size1of3">
-						<p>size1of3</p>
+						<div>size1of3</div>
 					</div>
 					<div class="unit size1of3 lastUnit">
-						<p>size1of3</p>
+						<div>size1of3</div>
 					</div>
 				</div>
 				<div class="line">
 					<div class="unit size1of4">
-						<p>size1of4</p>
+						<div>size1of4</div>
 					</div>
 					<div class="unit size1of4">
-						<p>size1of4</p>
+						<div>size1of4</div>
 					</div>
 					<div class="unit size1of4">
-						<p>size1of4</p>
+						<div>size1of4</div>
 					</div>
 					<div class="unit size1of4 lastUnit">
-						<p>size1of4</p>
+						<div>size1of4</div>
 					</div>
 				</div>
 				<div class="line">
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 					<div class="unit size1of8 lastUnit">
-						<p>size1of8</p>
+						<div>size1of8</div>
 					</div>
 				</div>
 			</div>
@@ -176,7 +179,7 @@
 					</div>
 				</div>
 				
-				<div>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code></div>
+				<p>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code></p>
 			</div>
 
 			<div class="section">
@@ -193,6 +196,11 @@
 					<button class="buttonLarge">Big</button>
 				</div>
 				<label><input type="checkbox" name="vehicle" value="admin" checked disabled> Admin [?]</label>
+				<fieldset>
+							<label for="inputFirstName">Default</label>
+							<input type="text" placeholder="" id="inputFirstName">
+				</fieldset>
+				<progress value="35" max="50"></progress>
 			</div>
 
 			<div class="section">
@@ -245,7 +253,6 @@
 			<div class="section">
 				<a name="icons"></a>
 				<h2>Icons</h2>
-				<h1 class="h0">H0 marketing headline</h1>
 				<span class="panjiva-icon-shipments-lg"></span>
 				<span class="panjiva-icon-contact-lg"></span>
 				<span class="panjiva-icon-mail-lg"></span>
@@ -341,7 +348,8 @@
 				<span class="panjiva-icon-renren"></span>
 				<span class="panjiva-icon-baidu"></span>
 				<span class="panjiva-icon-qzone"></span>
-				<span class="panjiva-icon-user iconBlock">
+				<span class="panjiva-icon-user iconBlock"></span>
+				<span class="panjiva-icon-user iconBlock disabled"></span>
 			</div>
 
 		</div> <!-- #content -->

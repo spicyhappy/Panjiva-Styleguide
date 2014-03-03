@@ -26,8 +26,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 
 .section {
 	border-top: 2px solid $gray1;
-	padding-top: 1.25em;
-	padding-bottom: 1.25em;
+	padding-top: 1.875em;
+	padding-bottom: 1.875em;
+	margin: 1.875em 0;
 }
 
 body {
@@ -234,6 +235,7 @@ p {
 	font-size: 1em;
 	line-height: 1.5em;
 	margin-bottom: 0.75em;
+	max-width: 37.5em;
 }
 
 a, a:visited {
@@ -329,6 +331,12 @@ button.buttonLink:hover, button.buttonLink:active{
 	border-bottom: 2px solid darken($blueLight, 20%);
 }
 
+button.buttonLarge {
+	height: 3em;
+	line-height: 3em;
+	font-size: 1em;
+}
+
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
 	display: block;
 	padding: 0 0.625em;
@@ -344,6 +352,10 @@ textarea, input[type="text"], input[type="password"], input[type="file"], input[
 button .icon {
 	padding-right: 0.42857142857143em;
 	color: inherit;
+}
+
+textarea:hover, input[type="text"]:hover, input[type="password"]:hover, input[type="file"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="date"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover, input[type="number"]:hover, input[type="email"]:hover, input[type="url"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="color"]:hover {
+	border-color: $gray4;
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus {
@@ -549,8 +561,11 @@ table {
 			border: 2px solid lighten($blueLight, 30%);
 		}
 
+		input:hover {
+			border-color: $blueDark;
+		}
 		input:focus {
-			border: 2px solid darken($blueLight, 10%);
+			border: 2px solid darken($blueDark, 10%);
 		}
 
 		.inputLink {
@@ -629,7 +644,6 @@ table {
 	z-index: 100;
 
 	a {
-		
 		border: none;
 		font-weight: bold;
 		color: inherit;

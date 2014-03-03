@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Styleguide</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div id="wrap">
+		<nav id="mainNav" class="">
+			<a class="logo img" href=""><img src="img/panjivalogovectorized-white.png" alt="panjiva logo"></a>
+			<span class="search">
+				<input type="text" placeholder="Enter a company or product">
+				<a class="inputLink">Advanced</a>
+				<a href=""><span class="panjiva-icon-search icon"></span></a>
+			</span>
+			<ul class="links">
+				<li><a href="">English<span class="panjiva-icon-down icon"></span></a></li>
+				<li><a href="">Sally Sullivan<span class="panjiva-icon-down icon"></span></a></li>
+			</ul>
+		</nav>
+		<ul id="sideNav">
+				<li class="active"><a href=""><span class="panjiva-icon-home icon"></span>Dashboard</a></li>
+				<li><a href=""><span class="panjiva-icon-star icon"></span>Favorites</a></li>
+				<li><a href=""><span class="panjiva-icon-folder icon"></span>Group</a></li>
+				<li><a href=""><span class="panjiva-icon-mail icon"></span>Inbox</a></li>
+				<li><a href=""><span class="panjiva-icon-download icon"></span>Exports</a></li>
+				<li><a href=""><span class="panjiva-icon-graph icon"></span>Trends</a></li>
+				<li><a href=""><span class="panjiva-icon-help icon"></span>Help</a></li>
+				<li><a href="">More</a></li>
+		</ul>
+
+		<div id="content">
+			<h1>Welcome, Sally</h1>
+
+		</div> <!-- #content end-->
+
+	</div> <!-- #wrap end-->
+
+	<!-- Baseline stuff  -->
+	<script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js"></script>
+	<script>window.onload = function() {baseliner = new Baseliner({ gridHeight: 6, gridColor: 'red', gridOffset: 0, gridOpacity: 20});}</script>
+
+	<!-- Hiding navigation -->
+	<script src="js/headroom.js"></script>
+	<script>	
+		(function() {
+			new Headroom(document.querySelector("#mainNav"), {
+				tolerance: 10,
+				offset : 205,
+				classes: {
+				pinned: "slideDown",
+				unpinned: "slideUp"
+				}
+			}).init();
+		}());
+	</script>
+</body>
+</html>
