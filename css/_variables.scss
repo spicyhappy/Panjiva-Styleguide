@@ -26,7 +26,6 @@ $purpleDark: #8E44AD;
 
 /* This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype Imaging with any questions regarding Web Fonts:  http://webfonts.fonts.com */
 
-$titleFontStack: "Avenir LT W01 85 Heavy", "Helvetica Neue", Arial, sans-serif;
+$titleFontStack: "Avenir LT W01 85 Heavy", "Avenir Heavy" "Helvetica Neue", Arial, sans-serif;
 $bodyFontStack: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
-$codeFontStack: Menlo,Monaco,Consolas,"Courier New",monospace;
-$baseline: 6px;
+$codeFontStack: Menlo, Monaco, Consolas, "Courier New", monospace;

@@ -12,14 +12,26 @@
 	text-align: center;
 }
 
-#grid .line {
+#grid .example .line {
 	background-color: lighten($blueLight, 40%);
 	margin-bottom: .75em;
 }
 
-#grid .unit div {
+#grid .example .unit div {
 	margin: .75em 0;
 	background-color: lighten($blueLight, 20%);
 	padding: .75em;
+	text-align: center;
+}
+
+#icons .icon {
+	font-size: 3em;
+}
+
+#icons .largeIcon {
+	font-size: 6em;
+}
+
+#icons .center {
 	text-align: center;
 }

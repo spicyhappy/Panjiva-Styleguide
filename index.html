@@ -34,76 +34,113 @@
 		<div id="content">
 			<a name="top" class="anchor"></a>
 			<h1>Styleguide</h1>
-			<p>This is our styleguide. There are many like it but this one's ours. It borrows heavily from <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> and <a href="https://ux.mailchimp.com/patterns">Mailchimp's pattern library</a>. See examples using the styleguide:</p>
+			<p>This is the Panjiva styleguide. There are many like it but this one's ours. It borrows heavily from <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a> and <a href="https://ux.mailchimp.com/patterns">Mailchimp's pattern library</a>. The styleguide defines everything in ems and percentages to make a future transition to responsive Panjiva easier.</p>
+
+			 <p>Example pages:</p>
 			<ul>
 				<li><a href="settings.html">Settings page</a></li>
 			</ul>
 			<div id="grid" class="section">
 				<a name="grid"></a>
 				<h2>Grid</h2>
-				<div class="line">
-					<div class="unit size1of1 lastUnit">
-						<div>size1of1</div>
+				<div class="example">
+					<div class="line">
+						<div class="unit size1of1 lastUnit">
+							<div>size1of1</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="unit size1of2">
+							<div>size1of2</div>
+						</div>
+						<div class="unit size1of2 lastUnit">
+							<div>size1of2</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="unit size1of3">
+							<div>size1of3</div>
+						</div>
+						<div class="unit size1of3">
+							<div>size1of3</div>
+						</div>
+						<div class="unit size1of3 lastUnit">
+							<div>size1of3</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="unit size1of4">
+							<div>size1of4</div>
+						</div>
+						<div class="unit size1of4">
+							<div>size1of4</div>
+						</div>
+						<div class="unit size1of4">
+							<div>size1of4</div>
+						</div>
+						<div class="unit size1of4 lastUnit">
+							<div>size1of4</div>
+						</div>
+					</div>
+					<div class="line">
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8">
+							<div>size1of8</div>
+						</div>
+						<div class="unit size1of8 lastUnit">
+							<div>size1of8</div>
+						</div>
 					</div>
 				</div>
+				<h3>Code notes</h3>
 				<div class="line">
-					<div class="unit size1of2">
-						<div>size1of2</div>
-					</div>
-					<div class="unit size1of2 lastUnit">
-						<div>size1of2</div>
-					</div>
+					<p class="unit size1of2">This code was borrowed from <a href="http://oocss.org/grids_docs.html">object oriented css</a>. You can use units like 2/3 of 7/8 to make widths span several columns, and nest .line divs inside .line divs. Use <code>.lastUnit</code> on the last unit to remove right-margin. Why isn't this built in with :last-of-type? Because this way you can have multiple units in the same line. Also, the units are defined in ems and percentages so feel free to use on non-960 grids.</p>
+					<pre class="unit size1of2 lastUnit">
+						&lt;div class="line&gt;<br />
+						&nbsp;&nbsp;&lt;div class="unit size1of2"&gt;Half width&lt;/div&gt;<br />
+						&nbsp;&nbsp;&lt;div class="unit size1of4"&gt;Quarter width&lt;/div&gt;<br />
+						&nbsp;&nbsp;&lt;div class="unit size1of4 lastUnit"&gt;Quarter width&lt;/div&gt;<br />
+						&lt;/div&gt;
+					</pre>
 				</div>
 				<div class="line">
-					<div class="unit size1of3">
-						<div>size1of3</div>
+					<div class="unit size1of2">Pro tip: add a <code>.alignRight</code> class to shift something to the right. Unlike float, this preserves order and doesn't break page flow. Code on the right results in:
+						<div class="example">
+							<div class="line">
+								<div class="unit size1of2"><div style="text-align:left"><h3>Section title</h3></div></div>
+								<div class="unit size1of2 lastUnit alignRight">
+									<div style="text-align:right"><a href="">Link1</a>
+									<a href="">Link2</a></div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="unit size1of3">
-						<div>size1of3</div>
-					</div>
-					<div class="unit size1of3 lastUnit">
-						<div>size1of3</div>
-					</div>
-				</div>
-				<div class="line">
-					<div class="unit size1of4">
-						<div>size1of4</div>
-					</div>
-					<div class="unit size1of4">
-						<div>size1of4</div>
-					</div>
-					<div class="unit size1of4">
-						<div>size1of4</div>
-					</div>
-					<div class="unit size1of4 lastUnit">
-						<div>size1of4</div>
-					</div>
-				</div>
-				<div class="line">
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8">
-						<div>size1of8</div>
-					</div>
-					<div class="unit size1of8 lastUnit">
-						<div>size1of8</div>
-					</div>
+					<pre class="unit size1of2 lastUnit">
+						&lt;div class="line"&gt;<br />
+						&nbsp;&nbsp;&lt;div class="unit size1of2"&gt;&lt;h3&gt;Section title&lt;/h3&gt;&lt;/div&gt;<br />
+						&nbsp;&nbsp;&lt;div class="unit size1of2 lastUnit alignRight"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Link1&lt;/a&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=""&gt;Link2&lt;/a&gt;<br />
+						&nbsp;&nbsp;&lt;/div&gt;<br />
+						&lt;/div&gt;
+					</pre>
 				</div>
 			</div>
 
@@ -114,9 +151,18 @@
 				<h1>H1 headline</h1>
 				<h2>H2 subheadline</h2>
 				<h3>H3 section header</h3>
+				<h4>H4 section section header</h4>
 				<p class="xlarge">Xlarge text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p class="large"> Large text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				<p> Normal text. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Bolded text is in Helvetica Neue Medium.</b> <a>This is a link.</a></p>
+				<h3>Code notes</h3>
+				<p>Much of the theory of typography comes from <a href="http://webtypography.net/">The Elements of Typographic Style Applied to the Web</a>.</p>
+				<p>Our title font is Avenir Heavy and our body fonts are Helvetica Neue Light (normal) and Helvetical Neue Medium (bold). These are defined by <code>$titleFontStack</code> and <code>$bodyFontStack</code>.</p>
+				<p>Use <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>.xlarge</code>, <code>.large</code>, and <code>.normal</code> to keep typography consistent. You can use <code>.h0</code> for an extra big text as well as any of the headers as classes (<code>.h1</code>, <code>.h2</code>, etc). There is a secret <code>.small</code> class but use it wisely. Smaller text strains people's eyes, especially those of older users.
+				</p>
+				<p>Use <code>p</code> tags to wrap non-heading and form text. They have a max-width that keeps text readable.</p>
+				<p>For all text including headings and buttons, capitalize only the first letter. All caps text is harder to read and looks too formal.</p>
+				<p>P.S. Letterspacing is a <a href="http://webtypography.net/2.1.7">font crime</a>.</p>
 			</div>
 
 			<div id="color" class="section">
@@ -178,8 +224,9 @@
 						<span class="swatch" style="background-color:#8E44AD; color:white">$purpleDark<br />#8E44AD</span>
 					</div>
 				</div>
-				
-				<p>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code></p>
+				<h3>Code notes</h3>
+				<p>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code>. Our main color is <code>$blueLight</code> and Panjiva blue is <code>$blueDark</code>. Also note that the grays have a slightly blue color. Pure grays like <code>#333</code> and <code>#ccc</code> don't look as nice.
+				</p>
 			</div>
 
 			<div class="section">
@@ -201,6 +248,8 @@
 							<input type="text" placeholder="" id="inputFirstName">
 				</fieldset>
 				<progress value="35" max="50"></progress>
+				<h3>Code notes</h3>
+				<p>Unfortunately profileV4 overrides many of these styles. That's why there are several !important additions. If this causes you grief, my apologies.</p>
 			</div>
 
 			<div class="section">
@@ -211,147 +260,455 @@
 				<li><a href="">Profile</a></li>
 				<li><a href="">Order History</a></li>
 			</ul>
-				
+			<pre>
+				&lt;a name="navigation"&gt;&lt;/a&gt;<br />
+				&lt;h2&gt;Navigation&lt;/h2&gt;<br />
+				&lt;ul class="localNav"&gt;<br />
+				&nbsp;&nbsp;&lt;li class="active"&gt;&lt;a href=""&gt;Account&lt;/a&gt;&lt;/li&gt;<br />
+				&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Profile&lt;/a&gt;&lt;/li&gt;<br />
+				&nbsp;&nbsp;&lt;li&gt;&lt;a href=""&gt;Order History&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			</pre>
 			</div>
 
 
-			<div class="table">
+			<div class="section">
 				<a name="table"></a>
 				<h2>Table</h2>
 				<table>
-				<thead>
+					<thead>
+						<tr>
+							<td>Name</td>
+							<td>Email</td>
+						</tr>
+					</thead>
 					<tr>
-						<td>Name</td>
-						<td>Email</td>
+						<td>Sally Sullivan (me)</td>
+						<td>ssullivan@furniture.com</td>
 					</tr>
-				</thead>
-				<tr>
-					<td>Sally Sullivan (me)</td>
-					<td>ssullivan@furniture.com</td>
-				</tr>
-				<tr>
-					<td>Alex Subotnick</td>
-					<td>asubotnick@furniture.com</td>
-				</tr>
-				<tr class="focus">
-					<td>
-						<fieldset>
-							<label for="inputFirstName">Name</label>
-							<input type="text" placeholder="" id="inputFirstName">
-						</fieldset>
-					</td>
-					<td>
-						<fieldset>
-							<span class="label">It's free!</span><br>
-							<button>Invite User</button>
-						</fieldset>
-					</td>
-				</tr>
-			</table>
+					<tr>
+						<td>Alex Subotnick</td>
+						<td>asubotnick@furniture.com</td>
+					</tr>
+					<tr class="focus">
+						<td>
+							<fieldset>
+								<label for="inputFirstName">Name</label>
+								<input type="text" placeholder="" id="inputFirstName">
+							</fieldset>
+						</td>
+						<td>
+							<fieldset>
+								<span class="label">It's free!</span><br>
+								<button>Invite User</button>
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<div class="line">
+					<pre class="unit size1of1 lastUnit">
+						&lt;table&gt;<br />
+						&nbsp;&nbsp;&lt;thead&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Name&lt;/td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Email&lt;/td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br />
+						&nbsp;&nbsp;&lt;/thead&gt;<br />
+						&nbsp;&nbsp;&lt;tr&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Sally Sullivan (me)&lt;/td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ssullivan@furniture.com&lt;/td&gt;<br />
+						&nbsp;&nbsp;&lt;/tr&gt;<br />
+						&nbsp;&nbsp;&lt;tr&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Alex Subotnick&lt;/td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;asubotnick@furniture.com&lt;/td&gt;<br />
+						&nbsp;&nbsp;&lt;/tr&gt;<br />
+						&nbsp;&nbsp;&lt;tr class="focus"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="inputFirstName"&gt;Name&lt;/label&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="" id="inputFirstName"&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;fieldset&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="label"&gt;It's free!&lt;/span&gt;&lt;br&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&gt;Invite User&lt;/button&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/fieldset&gt;<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br />
+						&nbsp;&nbsp;&lt;/tr&gt;<br />
+						&lt;/table&gt;
+					</pre>
+				</div>
 			</div>
 
-			<div class="section">
+			<div class="section" id="icons">
 				<a name="icons"></a>
 				<h2>Icons</h2>
-				<span class="panjiva-icon-shipments-lg"></span>
-				<span class="panjiva-icon-contact-lg"></span>
-				<span class="panjiva-icon-mail-lg"></span>
-				<span class="panjiva-icon-factory-lg"></span>
-				<span class="panjiva-icon-tools-lg"></span>
-				<span class="panjiva-icon-search-lg"></span>
-				<span class="panjiva-icon-company-search-lg"></span>
-				<span class="panjiva-icon-building-lg"></span>
+				<div class="line center">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-shipments-lg largeIcon"></span>
+						<p>.panjiva-icon-shipments-lg .largeIcon</p>
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-contact-lg largeIcon"></span>
+						<p>.panjiva-icon-contact-lg .largeIcon</p>
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-mail-lg largeIcon"></span>
+						<p>.panjiva-icon-mail-lg .largeIcon</p>
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-factory-lg largeIcon"></span>
+						<p>.panjiva-icon-factory-lg .largeIcon</p>
+					</div>
+				</div>
+				<div class="line center">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-tools-lg largeIcon"></span>
+						<p>.panjiva-icon-tools-lg .largeIcon</p>
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-search-lg largeIcon"></span>
+						<p>.panjiva-icon-search-lg .largeIcon</p>
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-company-search-lg largeIcon"></span>
+						<p>.panjiva-icon-company-search-lg .largeIcon</p>
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-building-lg largeIcon"></span>
+						<p>.panjiva-icon-building-lg .largeIcon</p>
+					</div>
+				</div>
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-home"></span> panjiva-icon-home
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-mail"></span> panjiva-icon-mail
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-building"></span> panjiva-icon-building
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-bank"></span> panjiva-icon-bank
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-globe"></span> panjiva-icon-globe
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-folder"></span> panjiva-icon-folder
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-comment"></span> panjiva-icon-comment
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-graph"></span> panjiva-icon-graph
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-print"></span> panjiva-icon-print
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-clipboard"></span> panjiva-icon-clipboard
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-paper"></span> panjiva-icon-paper
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-photo"></span> panjiva-icon-photo
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-microphone"></span> panjiva-icon-microphone
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-microphone-no"></span> panjiva-icon-microphone-no
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-call"></span> panjiva-icon-call
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-calling"></span> panjiva-icon-calling
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-megaphone"></span> panjiva-icon-megaphone
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-contacts"></span> panjiva-icon-contacts
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-id"></span> panjiva-icon-id
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-calendar"></span> panjiva-icon-calendar
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-clock"></span> panjiva-icon-clock
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-compose"></span> panjiva-icon-compose
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-settings"></span> panjiva-icon-settings
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-lightbulb"></span> panjiva-icon-lightbulb
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-search"></span> panjiva-icon-search
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-location"></span> panjiva-icon-location
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-paperclip"></span> panjiva-icon-paperclip
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-star lastUnit"></span> panjiva-icon-star
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-link"></span> panjiva-icon-link
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-heart"></span> panjiva-icon-heart
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-gift"></span> panjiva-icon-gift
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-shirt"></span> panjiva-icon-shirt
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-trash"></span> panjiva-icon-trash
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-anchor"></span> panjiva-icon-anchor
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-umbrella"></span> panjiva-icon-umbrella
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-sun lastUnit"></span> panjiva-icon-sun
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-moon"></span> panjiva-icon-moon
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-user"></span> panjiva-icon-user
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-add-user"></span> panjiva-icon-add-user
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-group"></span> panjiva-icon-group
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-cart"></span> panjiva-icon-cart
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-database"></span> panjiva-icon-database
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-briefcase"></span> panjiva-icon-briefcase
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-flag"></span> panjiva-icon-flag
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-undo"></span> panjiva-icon-undo
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-cloud-upload"></span> panjiva-icon-cloud-upload
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-cloud-download"></span> panjiva-icon-cloud-download
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-lock"></span> panjiva-icon-lock
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-unlock"></span> panjiva-icon-unlock
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-key"></span> panjiva-icon-key
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-question-mark"></span> panjiva-icon-question-mark
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-exclamation"></span> panjiva-icon-exclamation
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-info"></span> panjiva-icon-info
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-help"></span> panjiva-icon-help
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-minimize"></span> panjiva-icon-minimize
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-maximize"></span> panjiva-icon-maximize
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-plus"></span> panjiva-icon-plus
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-plus-circle"></span> panjiva-icon-plus-circle
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-check"></span> panjiva-icon-check
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-check-circle"></span> panjiva-icon-check-circle
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-x"></span> panjiva-icon-x
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-x-circle"></span> panjiva-icon-x-circle
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-up"></span> panjiva-icon-up
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-up-circle"></span> panjiva-icon-up-circle
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-down"></span> panjiva-icon-down
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-down-circle"></span> panjiva-icon-down-circle
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-right"></span> panjiva-icon-right
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-right-circle lastUnit"></span> panjiva-icon-right-circle
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-left"></span> panjiva-icon-left
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-left-circle"></span> panjiva-icon-left-circle
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-left-double lastUnit"></span> panjiva-icon-left-double
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-right-double"></span> panjiva-icon-right-double
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-download"></span> panjiva-icon-download
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-upload"></span> panjiva-icon-upload
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-rss"></span> panjiva-icon-rss
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-facebook"></span> panjiva-icon-facebook
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-wechat"></span> panjiva-icon-wechat
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-twitter"></span> panjiva-icon-twitter
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-video"></span> panjiva-icon-video
+					</div>
+					<div class="unit size1of4 lastUnit">
+						<span class="icon panjiva-icon-google-plus"></span> panjiva-icon-google-plus
+					</div>
+				</div>
 				
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-linkedin"></span> panjiva-icon-linkedin
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-weibo"></span> panjiva-icon-weibo
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-renren"></span> panjiva-icon-renren
+					</div>
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-baidu lastUnit"></span> panjiva-icon-baidu
+					</div>
+				</div>
 
-				<span class="panjiva-icon-home"></span>
-				<span class="panjiva-icon-mail"></span>
-				<span class="panjiva-icon-building"></span>
-				<span class="panjiva-icon-bank"></span>
-				<span class="panjiva-icon-globe"></span>
-				<span class="panjiva-icon-folder"></span>
-				<span class="panjiva-icon-comment"></span>
-				<span class="panjiva-icon-graph"></span>
-				<span class="panjiva-icon-print"></span>
-				<span class="panjiva-icon-clipboard"></span>
-				<span class="panjiva-icon-paper"></span>
-				<span class="panjiva-icon-photo"></span>
-				<span class="panjiva-icon-microphone"></span>
-				<span class="panjiva-icon-microphone-no"></span>
-				<span class="panjiva-icon-call"></span>
-				<span class="panjiva-icon-calling"></span>
-				<span class="panjiva-icon-megaphone"></span>
-				<span class="panjiva-icon-contacts"></span>
-				<span class="panjiva-icon-id"></span>
-				<span class="panjiva-icon-calendar"></span>
-				<span class="panjiva-icon-clock"></span>
-				<span class="panjiva-icon-compose"></span>
-				<span class="panjiva-icon-settings"></span>
-				<span class="panjiva-icon-lightbulb"></span>
-				<span class="panjiva-icon-search"></span>
-				<span class="panjiva-icon-location"></span>
-				<span class="panjiva-icon-paperclip"></span>
-				<span class="panjiva-icon-star"></span>
-				<span class="panjiva-icon-link"></span>
-				<span class="panjiva-icon-heart"></span>
-				<span class="panjiva-icon-gift"></span>
-				<span class="panjiva-icon-shirt"></span>
-				<span class="panjiva-icon-trash"></span>
-				<span class="panjiva-icon-anchor"></span>
-				<span class="panjiva-icon-umbrella"></span>
-				<span class="panjiva-icon-sun"></span>
-				<span class="panjiva-icon-moon"></span>
-				<span class="panjiva-icon-user"></span>
-				<span class="panjiva-icon-add-user"></span>
-				<span class="panjiva-icon-group"></span>
-				<span class="panjiva-icon-cart"></span>
-				<span class="panjiva-icon-database"></span>
-				<span class="panjiva-icon-briefcase"></span>
-				<span class="panjiva-icon-flag"></span>
-				<span class="panjiva-icon-undo"></span>
-				<span class="panjiva-icon-cloud-upload"></span>
-				<span class="panjiva-icon-cloud-download"></span>
-				<span class="panjiva-icon-lock"></span>
-				<span class="panjiva-icon-unlock"></span>
-				<span class="panjiva-icon-key"></span>
-				<span class="panjiva-icon-question-mark"></span>
-				<span class="panjiva-icon-exclamation"></span>
-				<span class="panjiva-icon-info"></span>
-				<span class="panjiva-icon-help"></span>
-				<span class="panjiva-icon-minimize"></span>
-				<span class="panjiva-icon-maximize"></span>
-				<span class="panjiva-icon-plus"></span>
-				<span class="panjiva-icon-plus-circle"></span>
-				<span class="panjiva-icon-check"></span>
-				<span class="panjiva-icon-check-circle"></span>
-				<span class="panjiva-icon-x"></span>
-				<span class="panjiva-icon-x-circle"></span>
-				<span class="panjiva-icon-up"></span>
-				<span class="panjiva-icon-up-circle"></span>
-				<span class="panjiva-icon-down"></span>
-				<span class="panjiva-icon-down-circle"></span>
-				<span class="panjiva-icon-right"></span>
-				<span class="panjiva-icon-right-circle"></span>
-				<span class="panjiva-icon-left"></span>
-				<span class="panjiva-icon-left-circle"></span>
-				<span class="panjiva-icon-left-double"></span>
-				<span class="panjiva-icon-right-double"></span>
-				<span class="panjiva-icon-download"></span>
-				<span class="panjiva-icon-upload"></span>
-				<span class="panjiva-icon-rss"></span>
-				<span class="panjiva-icon-facebook"></span>
-				<span class="panjiva-icon-wechat"></span>
-				<span class="panjiva-icon-twitter"></span>
-				<span class="panjiva-icon-video"></span>
-				<span class="panjiva-icon-google-plus"></span>
-				<span class="panjiva-icon-linkedin"></span>
-				<span class="panjiva-icon-weibo"></span>
-				<span class="panjiva-icon-renren"></span>
-				<span class="panjiva-icon-baidu"></span>
-				<span class="panjiva-icon-qzone"></span>
-				<span class="panjiva-icon-user iconBlock"></span>
+				<div class="line">
+					<div class="unit size1of4">
+						<span class="icon panjiva-icon-qzone"></span> panjiva-icon-qzone
+					</div>
+				</div>
+				<h3>Icon block</h3>
 				<span class="panjiva-icon-user iconBlock disabled"></span>
-			</div>
+				<p>panjiva-icon-user iconBlock disabled</p>
+				<span class="panjiva-icon-user iconBlock"></span>
+				<p>panjiva-icon-user iconBlock</p>
 
+			</div>
+			
 		</div> <!-- #content -->
 
 	</div> <!-- #wrap -->
