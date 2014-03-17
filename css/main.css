@@ -1211,13 +1211,14 @@ table tr.focus td, table tr.focus th {
   background-color: #15bded;
   overflow: hidden;
   z-index: 200;
+  line-height: 3.75em;
   transition: all .3s ease-in-out;
 }
-/* line 578, main.scss */
+/* line 579, main.scss */
 #mainNav .logo {
   position: absolute;
 }
-/* line 581, main.scss */
+/* line 582, main.scss */
 #mainNav .logo img {
   position: absolute;
   top: .5em;
@@ -1225,10 +1226,9 @@ table tr.focus td, table tr.focus th {
   padding-top: 0.5625em;
   height: 2.25em;
 }
-/* line 590, main.scss */
+/* line 591, main.scss */
 #mainNav .search {
   margin-left: 13.75em;
-  line-height: 3.75em;
   position: relative;
 }
 /* line 595, main.scss */
@@ -1266,7 +1266,7 @@ table tr.focus td, table tr.focus th {
 }
 /* line 627, main.scss */
 #mainNav .search .inputLink:hover, #mainNav .search .icon:hover {
-  color: #98afc6;
+  color: #587ca0;
 }
 /* line 632, main.scss */
 #mainNav ul {
