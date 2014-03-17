@@ -254,14 +254,14 @@ p {
 	max-width: 37.5em;
 }
 
-a:not(.img):not(.button), a:visited:not(.img):not(.button) {
+a:not(.img), a:visited:not(.img) {
   border-bottom: 2px solid;
   color: $blueLight;
   text-decoration: none;
   font-weight: bold;
 }
 
-a:hover:not(.img):not(.button), a:visited:hover:not(.img):not(.button), a:active:not(.img):not(.button) {
+a:hover:not(img), a:active:not(img) {
   color: darken($blueLight, 20%);
 }
 
@@ -576,12 +576,10 @@ table {
 	z-index: 200;
 
 	.logo {
-		width: 11.25em;
-		height: 100%;
-		display: inline-block;
+		position: absolute;
 
 		img {
-			position: relative;
+			position: absolute;
 			top: .5em;
 			padding-left: 2.875em;
 			padding-top: 0.5625em;
@@ -590,7 +588,8 @@ table {
 	}
 
 	.search {
-		margin-left: 2.5em;
+		margin-left: 13.75em;
+		line-height: 3.75em;
 		position: relative;
 
 		input {
@@ -660,7 +659,7 @@ table {
 	}
 
 
-	transition: all .2s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 #mainNav.slideUp {

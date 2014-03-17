@@ -864,7 +864,7 @@ p {
 }
 
 /* line 257, main.scss */
-a:not(.img):not(.button), a:visited:not(.img):not(.button) {
+a:not(.img), a:visited:not(.img) {
   border-bottom: 2px solid;
   color: #15bded;
   text-decoration: none;
@@ -872,7 +872,7 @@ a:not(.img):not(.button), a:visited:not(.img):not(.button) {
 }
 
 /* line 264, main.scss */
-a:hover:not(.img):not(.button), a:visited:hover:not(.img):not(.button), a:active:not(.img):not(.button) {
+a:hover:not(img), a:active:not(img) {
   color: #0b7391;
 }
 
@@ -892,7 +892,7 @@ code, kbd, pre, samp {
   color: #c0392b;
   background-color: #fbf0ef;
   white-space: nowrap;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* line 290, main.scss */
@@ -913,7 +913,7 @@ button, .button {
   text-align: center;
   font-family: "HelveticaNeueW01", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, sans-serif;
   border: 0 none;
-  border-radius: 6px;
+  border-radius: 4px;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -973,7 +973,7 @@ button.buttonLarge, .button.buttonLarge {
 textarea, input[type="text"], input[type="password"], input[type="file"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
   display: block;
   padding: 0 0.625em;
-  border-radius: 6px;
+  border-radius: 4px;
   min-width: 3.75em;
   max-width: 37.5em;
   width: 100%;
@@ -1067,25 +1067,25 @@ progress {
   background-color: #ecf0f1;
   border: none;
   height: 1.5em;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* line 441, main.scss */
 progress::-webkit-progress-bar {
   background-color: #ecf0f1;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* line 446, main.scss */
 progress::-webkit-progress-value {
   background: #15bded;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* line 451, main.scss */
 progress::-moz-progress-bar {
   background: #15bded;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 /* line 457, main.scss */
@@ -1128,7 +1128,7 @@ fieldset label, fieldset .label {
 /* line 494, main.scss */
 .iconBlock {
   background-color: #ecf0f1;
-  border-radius: 6px;
+  border-radius: 4px;
   padding: 0.3em;
   font-size: 1.875em;
 }
@@ -1211,43 +1211,42 @@ table tr.focus td, table tr.focus th {
   background-color: #15bded;
   overflow: hidden;
   z-index: 200;
-  transition: all .2s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 /* line 578, main.scss */
 #mainNav .logo {
-  width: 11.25em;
-  height: 100%;
-  display: inline-block;
+  position: absolute;
 }
-/* line 583, main.scss */
+/* line 581, main.scss */
 #mainNav .logo img {
-  position: relative;
+  position: absolute;
   top: .5em;
   padding-left: 2.875em;
   padding-top: 0.5625em;
   height: 2.25em;
 }
-/* line 592, main.scss */
+/* line 590, main.scss */
 #mainNav .search {
-  margin-left: 2.5em;
+  margin-left: 13.75em;
+  line-height: 3.75em;
   position: relative;
 }
-/* line 596, main.scss */
+/* line 595, main.scss */
 #mainNav .search input {
   display: inline-block;
   width: 30%;
   min-width: 22.5em;
   border: 2px solid #a3e5f8;
 }
-/* line 603, main.scss */
+/* line 602, main.scss */
 #mainNav .search input:hover {
   border-color: #00a1cf;
 }
-/* line 606, main.scss */
+/* line 605, main.scss */
 #mainNav .search input:focus {
   border: 2px solid #00799c;
 }
-/* line 610, main.scss */
+/* line 609, main.scss */
 #mainNav .search .inputLink {
   position: absolute;
   right: 2.75em;
@@ -1255,60 +1254,60 @@ table tr.focus td, table tr.focus th {
   color: #34495e;
   font-weight: normal;
 }
-/* line 618, main.scss */
+/* line 617, main.scss */
 #mainNav .search .icon {
   position: absolute;
   right: 0.7em;
   line-height: 2.9em;
 }
-/* line 624, main.scss */
+/* line 623, main.scss */
 #mainNav .search .inputLink {
   line-height: 3.75em;
 }
-/* line 628, main.scss */
+/* line 627, main.scss */
 #mainNav .search .inputLink:hover, #mainNav .search .icon:hover {
   color: #98afc6;
 }
-/* line 633, main.scss */
+/* line 632, main.scss */
 #mainNav ul {
   display: inline-block;
   float: right;
   margin-right: 2.5em;
 }
-/* line 638, main.scss */
+/* line 637, main.scss */
 #mainNav ul .icon {
   position: relative;
   margin-left: 0.2em;
 }
-/* line 643, main.scss */
+/* line 642, main.scss */
 #mainNav ul li {
   display: inline-block;
   line-height: 3.75em;
   color: #34495e;
 }
-/* line 649, main.scss */
+/* line 648, main.scss */
 #mainNav ul li a {
   border: none;
   font-weight: bold;
   color: inherit;
   padding: 0 1.25em;
 }
-/* line 657, main.scss */
+/* line 656, main.scss */
 #mainNav ul li:hover {
   background-color: #74d8f4;
 }
 
-/* line 666, main.scss */
+/* line 665, main.scss */
 #mainNav.slideUp {
   top: -3.75em;
 }
 
-/* line 670, main.scss */
+/* line 669, main.scss */
 #mainNav.slideDown {
   top: 0;
 }
 
-/* line 674, main.scss */
+/* line 673, main.scss */
 #sideNav {
   overflow-y: auto;
   background-color: #ecf0f1;
@@ -1320,29 +1319,29 @@ table tr.focus td, table tr.focus th {
   padding-top: 3.75em;
   z-index: 100;
 }
-/* line 685, main.scss */
+/* line 684, main.scss */
 #sideNav a {
   border: none;
   font-weight: bold;
   color: inherit;
 }
-/* line 691, main.scss */
+/* line 690, main.scss */
 #sideNav li {
   padding: 0 1.25em;
   font-size: 1em;
   line-height: 3.75em;
   color: #95a5a6;
 }
-/* line 698, main.scss */
+/* line 697, main.scss */
 #sideNav li.selected {
   color: #34495e;
 }
-/* line 702, main.scss */
+/* line 701, main.scss */
 #sideNav li:hover {
   background-color: rgba(189, 195, 199, 0.3);
   color: #34495e;
 }
-/* line 707, main.scss */
+/* line 706, main.scss */
 #sideNav .icon {
   padding-right: 0.4em;
   color: inherit;
