@@ -111,7 +111,7 @@
 				</div>
 				<h3>Code notes</h3>
 				<div class="line">
-					<p class="unit size1of2">This code was borrowed from <a href="http://oocss.org/grids_docs.html">object oriented css</a>. You can use units like 2/3 of 7/8 to make widths span several columns, and nest .line divs inside .line divs. Use <code>.lastUnit</code> on the last unit to remove right-margin. Why isn't this built in with :last-of-type? Because this way you can have multiple units in the same line. Also, the units are defined in ems and percentages so feel free to use on non-960 grids.</p>
+					<p class="unit size1of2">This code was borrowed from <a href="http://oocss.org/grids_docs.html">object oriented css</a>. You can use units like 2/3 of 7/8 to make widths span several columns, and nest .line divs inside .line divs. Use <code>.lastUnit</code> on the last unit to remove right-margin. The units are defined in ems and percentages so feel free to use on non-960 grids.</p>
 					<pre class="unit size1of2 lastUnit">
 						&lt;div class="line&gt;<br />
 						&nbsp;&nbsp;&lt;div class="unit size1of2"&gt;Half width&lt;/div&gt;<br />
@@ -169,63 +169,63 @@
 				<a name="color"></a>
 				<h2>Color</h2>
 				<div class="line">
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#ECF0F1">$gray1<br />#ECF0F1</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#BDC3C7">$gray2<br />#BDC3C7</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3 lastUnit">
 						<span class="swatch" style="background-color:#95A5A6">$gray3<br />#95A5A6</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#7F8C8D; color:white">$gray4<br />#7F8C8D</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#34495E; color:white">$gray5<br />#34495E</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3 lastUnit">
 						<span class="swatch" style="background-color:#2C3E50; color:white">$gray6<br />#2C3E50</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#15BDED; color:white">$blueLight<br />#15BDED</span>
 					</div>
-					<div class="unit size1of4">
-						<span class="swatch" style="background-color:#00A1CF; color:white">$blueDark<br />#00A1CF</span>
+					<div class="unit size1of3">
+						<span class="swatch" style="background-color:#00A1CF; color:white">$blueDark + $panjivaBlue<br />#00A1CF</span>
 					</div>
-					<div class="unit size1of4">
-						<span class="swatch" style="background-color:#2ECC71; color:white">$greenLight<br />#2ECC71</span>
+					<div class="unit size1of3 lastUnit">
+						<span class="swatch" style="background-color:#2ECC71; color:white">$greenLight + $successColor<br />#2ECC71</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#27AE60; color:white">$greenDark<br />#27AE60</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#F1C40F; color:white">$yellowLight<br />#F1C40F</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3 lastUnit">
 						<span class="swatch" style="background-color:#F39C12; color:white">$yellowDark<br />#F39C12</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#E67E22; color:white">$orangeLight<br />#E67E22</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#D35400; color:white">$orangeDark<br />#D35400</span>
 					</div>
-					<div class="unit size1of4">
-						<span class="swatch" style="background-color:#E74C3C; color:white">$redLight<br />#E74C3C</span>
+					<div class="unit size1of3 lastUnit">
+						<span class="swatch" style="background-color:#E74C3C; color:white">$redLight + $dangerColor <br />#E74C3C</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#C0392B; color:white">$redDark<br />#C0392B</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3">
 						<span class="swatch" style="background-color:#9B59B6; color:white">$purpleLight<br />#9B59B6</span>
 					</div>
-					<div class="unit size1of4">
+					<div class="unit size1of3 lastUnit">
 						<span class="swatch" style="background-color:#8E44AD; color:white">$purpleDark<br />#8E44AD</span>
 					</div>
 				</div>
 				<h3>Code notes</h3>
-				<p>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code>. Our main color is <code>$blueLight</code> and Panjiva blue is <code>$blueDark</code>. Also note that the grays have a slightly blue color. Pure grays like <code>#333</code> and <code>#ccc</code> don't look as nice.
+				<p>Tint color by adding white and shade colors by adding black. This keeps our color scheme consistent. With Sass this is done with <code>darken($color, 20%)</code> and <code>lighter($color, 20%)</code>. Our main color is <code>$blueLight</code> and Panjiva blue is <code>$blueDark</code>. Green (#2ECC71) means success and red (#E74C3C) means danger.
 				</p>
 			</div>
 
@@ -238,16 +238,17 @@
 					<button disabled>Disabled</button>
 					<button><span class="panjiva-icon-download icon"></span>Icon</button>
 					<button class="buttonLink">Button link</button>
-				</div>
-				<div class="line">
 					<button class="buttonLarge">Big</button>
 				</div>
+
 				<label><input type="checkbox" name="vehicle" value="admin" checked disabled> Admin [?]</label>
 				<fieldset>
 							<label for="inputFirstName">Default</label>
 							<input type="text" placeholder="" id="inputFirstName">
 				</fieldset>
+				<br>
 				<progress value="35" max="50"></progress>
+				<br>
 				<h3>Code notes</h3>
 				<p>Unfortunately profileV4 overrides many of these styles. That's why there are several !important additions. If this causes you grief, my apologies.</p>
 			</div>

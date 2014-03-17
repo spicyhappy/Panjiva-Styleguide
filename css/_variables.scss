@@ -9,18 +9,20 @@ $gray5: #34495E; $defaultColor: #34495E; // Default
 $gray6: #2C3E50; // Darkest
 
 $blueLight: #15BDED;
-$blueDark: #00A1CF; // Panjiva blue
-$greenLight: #2ECC71;
+$blueDark: #00A1CF; $panjivaBlue: #00A1CF;
+$greenLight: #2ECC71; $successColor: #2ECC71;
 $greenDark: #27AE60;
 $yellowLight: #F1C40F;
 $yellowDark: #F39C12;
 $orangeLight: #E67E22;
 $orangeDark: #D35400;
-$redLight: #E74C3C;
+$redLight: #E74C3C; $dangerColor: #E74C3C;
 $redDark: #C0392B;
 $purpleLight: #9B59B6;
 $purpleDark: #8E44AD;
 
+
+$borderRadius: 6px;
 
 // Typography
 
