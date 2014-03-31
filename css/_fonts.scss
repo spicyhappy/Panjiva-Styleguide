@@ -46,8 +46,11 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.panjiva-icon-help:before {
-	content: "\e65c";
+.panjiva-icon-more:before {
+	content: "\e662";
+}
+.panjiva-icon-building-lg:before {
+	content: "\e600";
 }
 .panjiva-icon-contact-lg:before {
 	content: "\e601";
@@ -78,6 +81,9 @@
 }
 .panjiva-icon-left-double:before {
 	content: "\e60a";
+}
+.panjiva-icon-left-circle:before {
+	content: "\e60b";
 }
 .panjiva-icon-left:before {
 	content: "\e60c";
@@ -112,6 +118,9 @@
 .panjiva-icon-check:before {
 	content: "\e616";
 }
+.panjiva-icon-plus-circle:before {
+	content: "\e617";
+}
 .panjiva-icon-plus:before {
 	content: "\e618";
 }
@@ -144,6 +153,9 @@
 }
 .panjiva-icon-cloud-upload:before {
 	content: "\e622";
+}
+.panjiva-icon-undo:before {
+	content: "\e623";
 }
 .panjiva-icon-flag:before {
 	content: "\e624";
@@ -178,6 +190,9 @@
 .panjiva-icon-trash:before {
 	content: "\e62e";
 }
+.panjiva-icon-shirt:before {
+	content: "\e62f";
+}
 .panjiva-icon-gift:before {
 	content: "\e630";
 }
@@ -211,6 +226,9 @@
 .panjiva-icon-clock:before {
 	content: "\e63a";
 }
+.panjiva-icon-calendar:before {
+	content: "\e63b";
+}
 .panjiva-icon-id:before {
 	content: "\e63c";
 }
@@ -243,6 +261,9 @@
 }
 .panjiva-icon-print:before {
 	content: "\e646";
+}
+.panjiva-icon-graph:before {
+	content: "\e647";
 }
 .panjiva-icon-comment:before {
 	content: "\e648";
@@ -280,27 +301,6 @@
 .panjiva-icon-twitter:before {
 	content: "\e653";
 }
-.panjiva-icon-graph:before {
-	content: "\e647";
-}
-.panjiva-icon-calendar:before {
-	content: "\e63b";
-}
-.panjiva-icon-shirt:before {
-	content: "\e62f";
-}
-.panjiva-icon-undo:before {
-	content: "\e623";
-}
-.panjiva-icon-plus-circle:before {
-	content: "\e617";
-}
-.panjiva-icon-left-circle:before {
-	content: "\e60b";
-}
-.panjiva-icon-building-lg:before {
-	content: "\e600";
-}
 .panjiva-icon-rss:before {
 	content: "\e654";
 }
@@ -325,11 +325,11 @@
 .panjiva-icon-baidu:before {
 	content: "\e65b";
 }
+.panjiva-icon-help:before {
+	content: "\e65c";
+}
 .panjiva-icon-bell:before {
 	content: "\e65d";
-}
-.panjiva-icon-down-arrow:before {
-	content: "\e65e";
 }
 .panjiva-icon-left-arrow:before {
 	content: "\e65f";
@@ -340,6 +340,18 @@
 .panjiva-icon-up-arrow:before {
 	content: "\e661";
 }
-.panjiva-icon-more:before {
-	content: "\e662";
+.panjiva-icon-down-arrow:before {
+	content: "\e65e";
+}
+.panjiva-icon-up-triangle:before {
+	content: "\e663";
+}
+.panjiva-icon-down-triangle:before {
+	content: "\e664";
+}
+.panjiva-icon-left-triangle:before {
+	content: "\e665";
+}
+.panjiva-icon-right-triangle:before {
+	content: "\e666";
 }
